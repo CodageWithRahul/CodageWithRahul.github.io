@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rahul Gupta | Python Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <nav>
             <h1 class="logo">Rahul<span>Gupta</span></h1>
-            <ul class="nav-links">
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -23,69 +34,125 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-content">
-            <h2>Hi, I'm <span>Rahul Gupta</span></h2>
-            <p>A passionate <strong>Python & Flask Developer</strong> focused on building clean, efficient, and scalable web applications.</p>
-            <a href="#projects" class="btn">View My Work</a>
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="img/rahul.png" alt="Rahul Gupta" />
+            </div>
+            <div class="hero-text">
+                <h2>Hi, I'm <span>Rahul Gupta</span></h2>
+                <p>A passionate <strong>Python & Flask Developer</strong> focused on building clean, efficient, and
+                    scalable web applications.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
+
+    <!-- About -->
     <section id="about" class="section">
         <h2>About Me</h2>
         <p>
-            I’m a dedicated Python developer currently enhancing my backend expertise with Flask and Django. 
-            I love building full-stack projects and continuously learning new technologies to deliver robust and user-friendly web solutions.
+            I’m a Python developer specializing in backend development with <b>Flask</b>, and I’m currently expanding my
+            expertise with <b>Django</b>. I enjoy building efficient, scalable, and user-friendly web applications while
+            continuously learning new technologies to enhance my skills.
         </p>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+      <div class="experience-card">
+    <h3>TCS iON Internship</h3>
+    <p><strong>Role:</strong> Backend Developer Intern</p>
+    <p><strong>Duration:</strong> July 8, 2025 – August 11, 2025</p>
+    <p>
+        During this internship, I worked on building a <strong>CAPTCHA service</strong> to secure a simple web application, implemented using <strong>Java Servlets</strong>.  
+        I gained hands-on experience in how APIs work, including handling requests and responses, and learned how to integrate APIs with frontend applications.  
+        Additionally, I developed skills in backend development practices, version control with Git & GitHub, and collaborating in a professional project environment.
+    </p>
+</div>
+
+    </section>
+
+
+    <!-- Skills -->
     <section id="skills" class="section">
         <h2>Skills</h2>
         <div class="skills-grid">
             <div class="skill">Python</div>
             <div class="skill">Flask</div>
-            <div class="skill">Django</div>
+            <div class="skill">Java</div>
+            <!-- <div class="skill">Django</div> -->
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">SQL</div>
+            <!-- <div class="skill">JavaScript</div> -->
+            <!-- <div class="skill">SQL</div> -->
             <div class="skill">Git & GitHub</div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects" class="section">
         <h2>Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <h3>Student Management System</h3>
                 <p>Built with Flask and SQL to manage student data, enrollment, and courses efficiently.</p>
-                <a href="https://your-sms-app-link.com" target="_blank" class="btn">Live Demo</a>
-                <a href="https://github.com/yourgithub/sms-project" target="_blank" class="btn-outline">GitHub</a>
+                <a href="https://rahul-sms.onrender.com" target="_blank" class="btn">Live Demo</a>
+                <a href="https://github.com/CodageWithRahul/Student-Management-system.git" target="_blank"
+                    class="btn-outline">GitHub</a>
             </div>
             <div class="project-card">
-                <h3>To-Do REST API</h3>
-                <p>A simple REST API using Flask to perform CRUD operations for daily tasks.</p>
-                <a href="https://github.com/yourgithub/todo-api" target="_blank" class="btn-outline">GitHub</a>
+                <h3>CAPTCHA Service</h3>
+                <p>
+                    Developed a web-based project during my TCS iON internship, focused on building efficient and
+                    scalable Python solutions using Flask and RESTful APIs.
+                    Implemented authentication, form validation, and clean backend logic to deliver a smooth user
+                    experience.
+                </p>
+                <a href="https://github.com/CodageWithRahul/captcha-service-project.git" target="_blank"
+                    class="btn-outline">GitHub</a>
             </div>
+
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>If you’d like to connect, feel free to reach out:</p>
-        <div class="contact-info">
-            <p>📧 <a href="mailto:rahulgupta@gmail.com">rahulgupta@gmail.com</a></p>
-            <p>💼 <a href="https://linkedin.com/in/rahulgupta" target="_blank">LinkedIn</a></p>
-            <p>💻 <a href="https://github.com/yourgithub" target="_blank">GitHub</a></p>
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+            <!-- Email -->
+            <a href="mailto:rahulgupta@gmail.com" target="_blank" title="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M502.3 190.8l-192-160c-15.5-12.9-38.5-12.9-54 0l-192 160c-12.3 10.3-15.3 28-7 41.3s26.1 20 41.3 12.7L256 143.5l209.7 101.3c15.2 7.3 33.7-0.3 41.3-12.7s5.3-30.9-7-41.3z" />
+                </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/rahulgupta" target="_blank" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.1 108.1 0 83.9 0 54.2S24.1 0 53.79 0 107.6 24.1 107.6 54.2 83.5 108.1 53.79 108.1zM447.9 448h-92.68V302.4c0-34.7-12.5-58.4-43.8-58.4-23.9 0-38.1 16-44.4 31.5-2.3 5.5-2.8 13.1-2.8 20.7V448h-92.7s1.2-241 0-266.9h92.7v37.9c12.3-19 34.4-46 83.8-46 61.2 0 107.2 40 107.2 125.8V448z" />
+                </svg>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/CodageWithRahul" target="_blank" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.1 0-5.4-1.6-5.4-3.6 0-2 2.3-3.6 5.2-3.6 2.9 0 5.4 1.6 5.4 3.6zm-33.6-10.3c-.7 1.6 1.6 3.3 5 3.7 3.6.4 7-0.7 7.7-2.3.7-1.6-1.6-3.3-5-3.7-3.6-.3-7 .7-7.7 2.3zm44.8-1.7c-2.9.7-4.7 2.9-4 4.9.7 2 3.6 2.7 6.5 2 2.9-.7 4.7-2.9 4-4.9-.8-1.9-3.6-2.7-6.5-2zM244.8 8C108.3 8 0 116.3 0 252.8c0 107.5 69.8 198.7 166.8 231.4 12.2 2.3 16.6-5.3 16.6-11.7 0-5.8-.2-21.2-.3-41.5-67.8 14.7-82.1-32.7-82.1-32.7-11.1-28.1-27.1-35.6-27.1-35.6-22.1-15.1 1.7-14.8 1.7-14.8 24.4 1.7 37.3 25.1 37.3 25.1 21.7 37.2 56.9 26.5 70.8 20.3 2.2-15.8 8.5-26.5 15.5-32.6-54.1-6.2-110.9-27-110.9-120.3 0-26.6 9.5-48.3 25.1-65.3-2.5-6.1-10.9-30.7 2.4-64 0 0 20.5-6.6 67.1 24.9 19.5-5.4 40.5-8.1 61.3-8.2 20.8.1 41.8 2.8 61.3 8.2 46.5-31.5 67-24.9 67-24.9 13.3 33.3 4.9 57.9 2.4 64 15.7 17 25.1 38.7 25.1 65.3 0 93.5-56.9 114-111 120 8.7 7.5 16.5 22.4 16.5 45.1 0 32.6-.3 58.9-.3 66.9 0 6.5 4.3 14.2 16.7 11.7C426.2 451.5 496 360.3 496 252.8 496 116.3 387.7 8 251.2 8z" />
+                </svg>
+            </a>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer>
         <p>© 2025 Rahul Gupta | Built with 💻 and ☕</p>
     </footer>
 </body>
+
 </html>
