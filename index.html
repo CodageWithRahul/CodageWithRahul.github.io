@@ -13,7 +13,7 @@
     <!-- Header -->
     <header>
         <nav>
-            <h1 class="logo">Rahul<span>Gupta</span></h1>
+            <h1 class="logo">R<span>G</span></h1>
 
             <!-- Hamburger Icon -->
             <div class="hamburger" id="hamburger">
@@ -35,9 +35,9 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-container">
-            <div class="hero-image">
+            <!-- <div class="hero-image">
                 <img src="img/rahul.png" alt="Rahul Gupta" />
-            </div>
+            </div> -->
             <div class="hero-text">
                 <h2>Hi, I'm <span>Rahul Gupta</span></h2>
                 <p>A passionate <strong>Python & Flask Developer</strong> focused on building clean, efficient, and
@@ -61,16 +61,19 @@
     <!-- Experience Section -->
     <section id="experience" class="section">
         <h2>Experience</h2>
-      <div class="experience-card">
-    <h3>TCS iON Internship</h3>
-    <p><strong>Role:</strong> Backend Developer Intern</p>
-    <p><strong>Duration:</strong> July 8, 2025 – August 11, 2025</p>
-    <p>
-        During this internship, I worked on building a <strong>CAPTCHA service</strong> to secure a simple web application, implemented using <strong>Java Servlets</strong>.  
-        I gained hands-on experience in how APIs work, including handling requests and responses, and learned how to integrate APIs with frontend applications.  
-        Additionally, I developed skills in backend development practices, version control with Git & GitHub, and collaborating in a professional project environment.
-    </p>
-</div>
+        <div class="experience-card">
+            <h3>TCS iON Internship</h3>
+            <p><strong>Role:</strong> Backend Developer Intern</p>
+            <p><strong>Duration:</strong> July 8, 2025 – August 11, 2025</p>
+            <p class="skill-text-description">
+                During this internship, I worked on building a <strong>CAPTCHA service</strong> to secure a simple web
+                application, implemented using <strong>Java Servlets</strong>.
+                I gained hands-on experience in how APIs work, including handling requests and responses, and learned
+                how to integrate APIs with frontend applications.
+                Additionally, I developed skills in backend development practices, version control with Git & GitHub,
+                and collaborating in a professional project environment.
+            </p>
+        </div>
 
     </section>
 
@@ -82,11 +85,13 @@
             <div class="skill">Python</div>
             <div class="skill">Flask</div>
             <div class="skill">Java</div>
-            <!-- <div class="skill">Django</div> -->
+            <div class="skill">Django</div>
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
-            <!-- <div class="skill">JavaScript</div> -->
-            <!-- <div class="skill">SQL</div> -->
+            <div class="skill">SQLite</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Swing<br>(Basic)</div>
+            <div class="skill">Servlets<br>(Basic)</div>
             <div class="skill">Git & GitHub</div>
         </div>
     </section>
@@ -97,21 +102,43 @@
         <div class="projects-grid">
             <div class="project-card">
                 <h3>Student Management System</h3>
-                <p>Built with Flask and SQL to manage student data, enrollment, and courses efficiently.</p>
-                <a href="https://rahul-sms.onrender.com" target="_blank" class="btn">Live Demo</a>
-                <a href="https://github.com/CodageWithRahul/Student-Management-system.git" target="_blank"
-                    class="btn-outline">GitHub</a>
+                <p>
+                    A full-stack web application built using <strong>Flask, HTML, CSS, JavaScript, and SQLite, leveraging
+                    SQLAlchemy ORM</strong> to efficiently manage student records, course enrollments, and
+                    academic data. Includes features like CRUD operations, search and filter functionality, and secure
+                    user authentication.
+                </p>
+                <div class="btn-container"><a href="https://rahul-sms.onrender.com" target="_blank" class="btn">Live
+                        Demo</a>
+                    <a href="https://github.com/CodageWithRahul/Student-Management-system.git" target="_blank"
+                        class="btn-outline">GitHub</a>
+                </div>
+
             </div>
             <div class="project-card">
                 <h3>CAPTCHA Service</h3>
                 <p>
-                    Developed a web-based project during my TCS iON internship, focused on building efficient and
-                    scalable Python solutions using Flask and RESTful APIs.
-                    Implemented authentication, form validation, and clean backend logic to deliver a smooth user
-                    experience.
+                    Developed a secure web-based application during my TCS iON internship using <strong>Java
+                        Servlets</strong>.
+                    Implemented a custom CAPTCHA service to protect forms from automated submissions and gained hands-on
+                    experience in backend development, request handling, and integrating APIs with the frontend.
                 </p>
-                <a href="https://github.com/CodageWithRahul/captcha-service-project.git" target="_blank"
-                    class="btn-outline">GitHub</a>
+
+                <div class="btn-container"><a href="https://github.com/CodageWithRahul/captcha-service-project.git"
+                        target="_blank" class="btn-outline">GitHub</a></div>
+            </div>
+            <div class="project-card">
+                <h3>Bill Maker</h3>
+                <p>
+                    A desktop-based billing application built using <strong>Java OOP</strong> with
+                    <strong>Swing</strong> for the user interface, designed for Internet Service Providers to manage
+                    broadband and cable invoices efficiently.
+                    Features include invoice generation, editable customer data, Excel export, watermark support, and
+                    optimized print layouts for professional billing management.
+                </p>
+
+                <div class="btn-container"><a href="https://github.com/CodageWithRahul/Bill-Maker/releases"
+                        target="_blank" class="btn-outline">GitHub</a></div>
             </div>
 
         </div>
@@ -122,7 +149,7 @@
         <h2>Contact Me</h2>
         <div class="contact-icons">
             <!-- Email -->
-            <a href="mailto:rahulgupta@gmail.com" target="_blank" title="Email">
+            <a href="mailto:rahulguptaa650@gmail.com" target="_blank" title="Email">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
                         d="M502.3 190.8l-192-160c-15.5-12.9-38.5-12.9-54 0l-192 160c-12.3 10.3-15.3 28-7 41.3s26.1 20 41.3 12.7L256 143.5l209.7 101.3c15.2 7.3 33.7-0.3 41.3-12.7s5.3-30.9-7-41.3z" />
@@ -130,7 +157,7 @@
             </a>
 
             <!-- LinkedIn -->
-            <a href="https://linkedin.com/in/rahulgupta" target="_blank" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/rahul-gupta-24and27" target="_blank" title="LinkedIn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
                         d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.1 108.1 0 83.9 0 54.2S24.1 0 53.79 0 107.6 24.1 107.6 54.2 83.5 108.1 53.79 108.1zM447.9 448h-92.68V302.4c0-34.7-12.5-58.4-43.8-58.4-23.9 0-38.1 16-44.4 31.5-2.3 5.5-2.8 13.1-2.8 20.7V448h-92.7s1.2-241 0-266.9h92.7v37.9c12.3-19 34.4-46 83.8-46 61.2 0 107.2 40 107.2 125.8V448z" />

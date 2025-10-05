@@ -185,7 +185,7 @@ nav {
     max-width: 800px;
     margin: 0 auto 1rem;
     font-size: 1.05rem;
-    justify-content: center;
+    text-align: justify;
     color: #444;
 }
 
@@ -227,6 +227,9 @@ nav {
     font-weight: 600;
     transition: all 0.3s ease;
 }
+.skill-text-description{
+    text-align: justify;
+}
 
 .skill:hover {
     background: #c813ff;
@@ -236,29 +239,93 @@ nav {
 
 /* Projects */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
 }
 
 .project-card {
-    background: white;
-    padding: 1.8rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    transition: all 0.3s ease;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .project-card h3 {
-    margin-bottom: 1rem;
-    color: #111827;
+  font-size: 1.4rem;
+  color: #5b21b6;
+  margin-bottom: 0.8rem;
+  text-align: center;
 }
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #333;
+  text-align: justify;
+  /* margin-bottom: 1.5rem; */
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Buttons container */
+.project-card .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* space between buttons */
+  margin-top: 1rem;
+}
+
+/* Main Button */
+.btn {
+  background: linear-gradient(135deg, #7b2ff7, #9f5eff);
+  color: #fff;
+  padding: 0.45rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(123, 47, 247, 0.3);
+}
+
+/* Outline Button */
+.btn-outline {
+  border: 1.8px solid #7b2ff7;
+  color: #7b2ff7;
+  padding: 0.43rem 1.1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: linear-gradient(135deg, #7b2ff7, #9f5eff);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(123, 47, 247, 0.3);
+}
+
+
+
 
 
 /* Contact Section */
