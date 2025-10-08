@@ -33,10 +33,14 @@ nav {
 .logo {
     font-size: 1.6rem;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .logo span {
     color: #c813ff;
+}
+#nav_a{
+    text-decoration:  none;
 }
 
 .nav-links {
@@ -271,7 +275,7 @@ nav {
 .project-card p {
   font-size: 0.95rem;
   color: #333;
-  text-align: justify;
+  text-align: center;
   /* margin-bottom: 1.5rem; */
   line-height: 1.6;
   flex-grow: 1;
@@ -299,9 +303,16 @@ nav {
   transition: all 0.3s ease;
 }
 
+
+
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 3px 10px rgba(123, 47, 247, 0.3);
+}
+
+.view-btn:hover{
+  background: linear-gradient(135deg, #ffffff, #c8c8c8);
+color: #7b2ff7;
 }
 
 /* Outline Button */
