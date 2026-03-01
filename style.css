@@ -261,7 +261,7 @@ nav {
 .card-inner {
     position: relative;
     width: 100%;
-    height: clamp(13rem, 35vw, 28rem);
+    height: clamp(13rem, 20vw, 28rem);
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
