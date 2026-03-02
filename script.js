@@ -69,7 +69,7 @@ setInterval(() => {
 }, 1000);
 
 
-
+// if (window.innerWidth <= 768) return;
 let mouseX = 0;
 let mouseY = 0;
 
