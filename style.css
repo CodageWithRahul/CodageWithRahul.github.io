@@ -462,8 +462,8 @@ nav {
 
 /* Status Text */
 .ai-content .status {
-    font-size: 0.85rem;
-    color: #555;
+    font-size: 1rem;
+    color: #ffffff;
     margin: 0;
     text-align: center;
 }
@@ -577,22 +577,37 @@ nav {
 }
 
 
-/* ============================= */
-/* AI CARD DULL EFFECT ONLY */
-/* ============================= */
+.parallax-wrapper {
+    width: 100%;
+    background:
+        linear-gradient(rgba(13,17,23,0.92), rgba(13,17,23,0.30)),
+        url("img/ai_bg.png");
 
-.ai-project.project-dull::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: inherit;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 100px 0;
 }
+.parallax-wrapper2 {
+    width: 100%;
+    background:
+        linear-gradient(rgba(13,17,23,0.92), rgba(13,17,23,0.30)),
+        url("img/standing_human_ai.png");
 
-.ai-project.project-dull:hover::after {
-    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+}
+.parallax-wrapper2 .section {
+    background: transparent !important;
+    box-shadow: none;
+}
+.parallax-wrapper .section {
+    background: transparent !important;
+    box-shadow: none;
 }
 
 /* ============================= */
@@ -662,7 +677,7 @@ nav {
 
 .project-card {
     position: relative;
-    background: #161b22;
+    background: #12171d;
     border: 1px solid #2d333b;
     border-radius: 14px;
     padding: 1.5rem;
@@ -675,14 +690,16 @@ nav {
 
 .project-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 20px rgba(178, 178, 178, 0.12);
 }
 
 .project-card h3 {
-    font-size: 1.4rem;
-    color: #5b21b6;
-    margin-bottom: 0.8rem;
+  font-size: 1.35rem;
+    font-weight: 600;
+    color: #f1eaff;
     text-align: center;
+    margin-bottom: 1rem;
+
 }
 
 .project-card p {
@@ -935,6 +952,14 @@ footer p {
         margin: auto auto 20px;
     }
 
+    .parallax-wrapper {
+        background-attachment: scroll;
+        padding: 70px 0;
+    }
+     .parallax-wrapper2 {
+        background-attachment: scroll;
+        padding: 70px 0;
+    }
 
     /* ===== PROJECT GRID ===== */
 

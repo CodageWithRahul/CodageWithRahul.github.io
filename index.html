@@ -12,7 +12,6 @@
         <div class="cursor-layer layer2"></div>
         <div class="cursor-layer layer3"></div>
         <div class="cursor-layer layer4"></div>
-       
         <!-- Header -->
         <header>
             <nav>
@@ -64,32 +63,34 @@
             </div>
         </section>
         <!-- About -->
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>
-                I’m a backend-focused Python developer specializing in <b>Django</b> and <b>Flask</b>. I build scalable and efficient web applications with a strong focus on clean architecture and maintainable code. I enjoy designing backend systems that solve real-world problems and perform reliably in production. Alongside web development, I’m actively expanding my skills in AI and Machine Learning to build smarter, data-driven solutions.
-            </p>
-        </section>
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <h2>Experience</h2>
-            <div class="experience-card">
-                <h3>TCS iON Internship</h3>
+        <section class="parallax-wrapper">
+            <section id="about" class="section parallax-section">
+                <h2>About Me</h2>
                 <p>
-                    <strong>Role:</strong> Backend Developer Intern
+                    I’m a backend-focused Python developer specializing in <b>Django</b> and <b>Flask</b>. I build scalable and efficient web applications with a strong focus on clean architecture and maintainable code. I enjoy designing backend systems that solve real-world problems and perform reliably in production. Alongside web development, I’m actively expanding my skills in AI and Machine Learning to build smarter, data-driven solutions.
                 </p>
-                <p>
-                    <strong>Duration:</strong> July 8, 2025 – August 11, 2025
-                </p>
-                <p class="skill-text-description">
-                    During this internship, I worked on building a <strong>CAPTCHA service</strong> to secure a simple web
-                    application, implemented using <strong>Java Servlets</strong>.
-                    I gained hands-on experience in how APIs work, including handling requests and responses, and learned
-                    how to integrate APIs with frontend applications.
-                    Additionally, I developed skills in backend development practices, version control with Git & GitHub,
-                    and collaborating in a professional project environment.
-                </p>
-            </div>
+            </section>
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                <div class="experience-card">
+                    <h3>TCS iON Internship</h3>
+                    <p>
+                        <strong>Role:</strong> Backend Developer Intern
+                    </p>
+                    <p>
+                        <strong>Duration:</strong> July 8, 2025 – August 11, 2025
+                    </p>
+                    <p class="skill-text-description">
+                        During this internship, I worked on building a <strong>CAPTCHA service</strong> to secure a simple web
+                        application, implemented using <strong>Java Servlets</strong>.
+                        I gained hands-on experience in how APIs work, including handling requests and responses, and learned
+                        how to integrate APIs with frontend applications.
+                        Additionally, I developed skills in backend development practices, version control with Git & GitHub,
+                        and collaborating in a professional project environment.
+                    </p>
+                </div>
+            </section>
         </section>
         <!-- Skills -->
         <section id="skills" class="section">
@@ -109,135 +110,137 @@
             </div>
         </section>
         <!-- Projects -->
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card ai-project project-dull">
-                    <!-- Curtain Overlay -->
-                    <div class="curtain">
-                        <div class="curtain-left"></div>
-                        <div class="curtain-right"></div>
-                        <h2 class="coming-text">WORKING ON</h2>
-                    </div>
-                    <!-- Your existing content (unchanged) -->
-                    <div class="card-front">
-                        <div class="ai-content">
-                            <h3>AI-Powered Deepfake Detection & Secure Media Verification System</h3>
-                            <p class="status">Currently: Learning & Research Phase</p>
-                            <div class="ai-steps stage-learning">
-                                <div class="progress-line"></div>
-                                <div class="ai-step active">
-                                    <div class="circle"></div>
-                                    <p>Learning</p>
+        <section class="parallax-wrapper2">
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card ai-project ">
+                        <!-- Curtain Overlay -->
+                        <div class="curtain">
+                            <div class="curtain-left"></div>
+                            <div class="curtain-right"></div>
+                            <h2 class="coming-text">WORKING ON</h2>
+                        </div>
+                        <!-- Your existing content (unchanged) -->
+                        <div class="card-front">
+                            <div class="ai-content">
+                                <h3>AI-Powered Deepfake Detection & Secure Media Verification System</h3>
+                                <p class="status">Currently: Learning & Research Phase</p>
+                                <div class="ai-steps stage-learning">
+                                    <div class="progress-line"></div>
+                                    <div class="ai-step active">
+                                        <div class="circle"></div>
+                                        <p>Learning</p>
+                                    </div>
+                                    <div class="ai-step">
+                                        <div class="circle"></div>
+                                        <p>Development</p>
+                                    </div>
+                                    <div class="ai-step">
+                                        <div class="circle"></div>
+                                        <p>Deploy</p>
+                                    </div>
                                 </div>
-                                <div class="ai-step">
-                                    <div class="circle"></div>
-                                    <p>Development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-inner">
+                            <!-- FRONT SIDE -->
+                            <div class="card-front">
+                                <h3>Advance TODO Management System</h3>
+                                <p>
+                                    An advanced task management system built with <strong>Python and Django</strong> designed to streamline productivity and task organization. The application includes features such as task prioritization, deadline tracking, status management, automated recurring tasks, and an intuitive user interface to enhance user experience and efficiency.
+                                </p>
+                            </div>
+                            <!-- BACK (Slider) -->
+                            <div class="card-back">
+                                <div class="slider">
+                                    <img id="sliderImage"
+                                         src="img/todo_img/login_page.png"
+                                         class="slide active">
                                 </div>
-                                <div class="ai-step">
-                                    <div class="circle"></div>
-                                    <p>Deploy</p>
+                            </div>
+                        </div>
+                        <!-- Buttons (Always Visible) -->
+                        <div class="btn-container">
+                            <a href="https://advance-todo-app-1rt6.onrender.com/"
+                               target="_blank"
+                               class="btn">Live Demo</a>
+                            <a href="https://github.com/CodageWithRahul/Advance-Todo-app.git"
+                               target="_blank"
+                               class="btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Student Management System</h3>
+                                <p>
+                                    A full-stack web application built using <strong>Flask, HTML, CSS, JavaScript, and SQLite with SQLAlchemy ORM</strong>, designed to efficiently manage student records, course enrollments, and academic data. The system supports complete CRUD operations, advanced search and filtering, and secure user authentication to ensure data integrity and usability.
+                                </p>
+                            </div>
+                            <!-- BACK SIDE (Image) -->
+                            <div class="card-back">
+                                <div class="slider">
+                                    <img src="img/sms_img/login page.png" class="slide active">
+                                    <img src="img/sms_img/dashboard.png" class="slide">
+                                    <img src="img/sms_img/students.png" class="slide">
+                                    <img src="img/sms_img/enrrolment.png" class="slide">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-inner">
-                        <!-- FRONT SIDE -->
-                        <div class="card-front">
-                            <h3>Advance TODO Management System</h3>
-                            <p>
-                                An advanced task management system built with <strong>Python and Django</strong> designed to streamline productivity and task organization. The application includes features such as task prioritization, deadline tracking, status management, automated recurring tasks, and an intuitive user interface to enhance user experience and efficiency.
-                            </p>
+                        <div class="btn-container">
+                            <a href="https://rahul-sms.onrender.com" target="_blank" class="btn">Live
+                            Demo</a>
+                            <a href="https://github.com/CodageWithRahul/Student-Management-system.git"
+                               target="_blank"
+                               class="btn-outline">GitHub</a>
                         </div>
-                        <!-- BACK (Slider) -->
-                        <div class="card-back">
-                            <div class="slider">
-                                <img id="sliderImage"
-                                     src="img/todo_img/login_page.png"
-                                     class="slide active">
+                    </div>
+                    <div class="project-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>CAPTCHA Service</h3>
+                                <p>
+                                    Developed a secure web-based application during my TCS iON internship using <strong>Java Servlets</strong>. Designed and implemented a custom CAPTCHA service to prevent automated form submissions, gaining hands-on experience in backend development, HTTP request handling, and frontend–backend integration.
+                                </p>
+                            </div>
+                            <div class="card-back">
+                                <div class="slider">
+                                    <img src="img/captcha_img/captcha_img.png" class="slide active">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Buttons (Always Visible) -->
-                    <div class="btn-container">
-                        <a href="https://advance-todo-app-1rt6.onrender.com/"
-                           target="_blank"
-                           class="btn">Live Demo</a>
-                        <a href="https://github.com/CodageWithRahul/Advance-Todo-app.git"
-                           target="_blank"
-                           class="btn-outline">GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>Student Management System</h3>
-                            <p>
-                                A full-stack web application built using <strong>Flask, HTML, CSS, JavaScript, and SQLite with SQLAlchemy ORM</strong>, designed to efficiently manage student records, course enrollments, and academic data. The system supports complete CRUD operations, advanced search and filtering, and secure user authentication to ensure data integrity and usability.
-                            </p>
+                        <div class="btn-container">
+                            <a href="https://github.com/CodageWithRahul/captcha-service-project.git"
+                               target="_blank"
+                               class="btn-outline">GitHub</a>
                         </div>
-                        <!-- BACK SIDE (Image) -->
-                        <div class="card-back">
-                            <div class="slider">
-                                <img src="img/sms_img/login page.png" class="slide active">
-                                <img src="img/sms_img/dashboard.png" class="slide">
-                                <img src="img/sms_img/students.png" class="slide">
-                                <img src="img/sms_img/enrrolment.png" class="slide">
+                    </div>
+                    <div class="project-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Bill Maker</h3>
+                                <p>
+                                    Developed a desktop-based billing application using <strong>Java (OOP principles)</strong> with <strong>Swing</strong> for the user interface, tailored for Internet Service Providers to efficiently manage broadband and cable invoices. The system includes invoice generation, editable customer records, Excel export functionality, watermark integration, and optimized print layouts for professional billing operations.
+                                </p>
+                            </div>
+                            <div class="card-back">
+                                <div class="slider">
+                                    <img src="img/billmaker_img/bill dashboard.png" class="slide active">
+                                    <img src="img/billmaker_img/sample_bill.png" class="slide">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-container">
-                        <a href="https://rahul-sms.onrender.com" target="_blank" class="btn">Live
-                        Demo</a>
-                        <a href="https://github.com/CodageWithRahul/Student-Management-system.git"
-                           target="_blank"
-                           class="btn-outline">GitHub</a>
+                        <div class="btn-container">
+                            <a href="https://github.com/CodageWithRahul/Bill-Maker/releases"
+                               target="_blank"
+                               class="btn-outline">GitHub</a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>CAPTCHA Service</h3>
-                            <p>
-                                Developed a secure web-based application during my TCS iON internship using <strong>Java Servlets</strong>. Designed and implemented a custom CAPTCHA service to prevent automated form submissions, gaining hands-on experience in backend development, HTTP request handling, and frontend–backend integration.
-                            </p>
-                        </div>
-                        <div class="card-back">
-                            <div class="slider">
-                                <img src="img/captcha_img/captcha_img.png" class="slide active">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-container">
-                        <a href="https://github.com/CodageWithRahul/captcha-service-project.git"
-                           target="_blank"
-                           class="btn-outline">GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>Bill Maker</h3>
-                            <p>
-                                Developed a desktop-based billing application using <strong>Java (OOP principles)</strong> with <strong>Swing</strong> for the user interface, tailored for Internet Service Providers to efficiently manage broadband and cable invoices. The system includes invoice generation, editable customer records, Excel export functionality, watermark integration, and optimized print layouts for professional billing operations.
-                            </p>
-                        </div>
-                        <div class="card-back">
-                            <div class="slider">
-                                <img src="img/billmaker_img/bill dashboard.png" class="slide active">
-                                <img src="img/billmaker_img/sample_bill.png" class="slide">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-container">
-                        <a href="https://github.com/CodageWithRahul/Bill-Maker/releases"
-                           target="_blank"
-                           class="btn-outline">GitHub</a>
-                    </div>
-                </div>
-            </div>
+            </section>
         </section>
         <!-- Contact -->
         <section id="contact" class="section">
