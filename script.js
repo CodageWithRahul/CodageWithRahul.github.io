@@ -2,6 +2,8 @@ const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 const card = document.querySelector(".project-card");
 const slides = card.querySelectorAll(".slide");
+const layers = document.querySelectorAll(".cursor-layer");
+
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("show");
@@ -65,3 +67,55 @@ setInterval(() => {
     index = (index + 1) % images.length;
     sliderImage.src = images[index];
 }, 1000);
+
+
+
+let mouseX = 0;
+let mouseY = 0;
+
+let positions = [];
+
+// Initialize positions
+layers.forEach(() => {
+    positions.push({ x: 0, y: 0 });
+});
+
+document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+// Animation loop
+function animate() {
+    layers.forEach((layer, index) => {
+        let targetX = index === 0 ? mouseX : positions[index - 1].x;
+        let targetY = index === 0 ? mouseY : positions[index - 1].y;
+
+        // Different speed for each layer
+        let speed = 0.25 - index * 0.05;
+
+        positions[index].x += (targetX - positions[index].x) * speed;
+        positions[index].y += (targetY - positions[index].y) * speed;
+
+        layer.style.left = positions[index].x + "px";
+        layer.style.top = positions[index].y + "px";
+    });
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+const clickableSelectors = "a, button, .btn, input[type='submit'], input[type='button'], [role='button']";
+
+const clickables = document.querySelectorAll(clickableSelectors);
+
+clickables.forEach(el => {
+    el.addEventListener("mouseenter", () => {
+        document.body.classList.add("cursor-hidden");
+    });
+
+    el.addEventListener("mouseleave", () => {
+        document.body.classList.remove("cursor-hidden");
+    });
+});

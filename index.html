@@ -8,6 +8,11 @@
         <script defer src="script.js"></script>
     </head>
     <body>
+        <div class="cursor-layer layer1"></div>
+        <div class="cursor-layer layer2"></div>
+        <div class="cursor-layer layer3"></div>
+        <div class="cursor-layer layer4"></div>
+       
         <!-- Header -->
         <header>
             <nav>
@@ -24,6 +29,9 @@
                 </div>
                 <!-- Navbar Links -->
                 <ul class="nav-links" id="nav-links">
+                    <li>
+                        <a href="cv/Rahul_Gupta_CV.pdf" target="_blank" download>Download CV</a>
+                    </li>
                     <li>
                         <a href="#about">About</a>
                     </li>
@@ -48,7 +56,7 @@
                     </h2>
                     <h3>Python Backend Developer | Django • Flask</h3>
                     <p>
-                      I build practical web applications with clean code and a focus on making things simple and efficient for real users.
+                        I build practical web applications with clean code and a focus on making things simple and efficient for real users.
                     </p>
                     <a href="#projects" class="btn-outline">View My Work</a>
                     <a href="#contact" class="btn-outline">Let's Connect</a>
@@ -59,7 +67,7 @@
         <section id="about" class="section">
             <h2>About Me</h2>
             <p>
-             I’m a backend-focused Python developer specializing in <b>Django</b> and <b>Flask</b>. I build scalable and efficient web applications with a strong focus on clean architecture and maintainable code. I enjoy designing backend systems that solve real-world problems and perform reliably in production. Alongside web development, I’m actively expanding my skills in AI and Machine Learning to build smarter, data-driven solutions.
+                I’m a backend-focused Python developer specializing in <b>Django</b> and <b>Flask</b>. I build scalable and efficient web applications with a strong focus on clean architecture and maintainable code. I enjoy designing backend systems that solve real-world problems and perform reliably in production. Alongside web development, I’m actively expanding my skills in AI and Machine Learning to build smarter, data-driven solutions.
             </p>
         </section>
         <!-- Experience Section -->
@@ -104,6 +112,36 @@
         <section id="projects" class="section">
             <h2>Projects</h2>
             <div class="projects-grid">
+                <div class="project-card ai-project project-dull">
+                    <!-- Curtain Overlay -->
+                    <div class="curtain">
+                        <div class="curtain-left"></div>
+                        <div class="curtain-right"></div>
+                        <h2 class="coming-text">WORKING ON</h2>
+                    </div>
+                    <!-- Your existing content (unchanged) -->
+                    <div class="card-front">
+                        <div class="ai-content">
+                            <h3>AI-Powered Deepfake Detection & Secure Media Verification System</h3>
+                            <p class="status">Currently: Learning & Research Phase</p>
+                            <div class="ai-steps stage-learning">
+                                <div class="progress-line"></div>
+                                <div class="ai-step active">
+                                    <div class="circle"></div>
+                                    <p>Learning</p>
+                                </div>
+                                <div class="ai-step">
+                                    <div class="circle"></div>
+                                    <p>Development</p>
+                                </div>
+                                <div class="ai-step">
+                                    <div class="circle"></div>
+                                    <p>Deploy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-card">
                     <div class="card-inner">
                         <!-- FRONT SIDE -->
@@ -116,7 +154,9 @@
                         <!-- BACK (Slider) -->
                         <div class="card-back">
                             <div class="slider">
-                                <img id="sliderImage" src="img/todo_img/login_page.png" class="slide active">
+                                <img id="sliderImage"
+                                     src="img/todo_img/login_page.png"
+                                     class="slide active">
                             </div>
                         </div>
                     </div>
@@ -187,6 +227,7 @@
                         <div class="card-back">
                             <div class="slider">
                                 <img src="img/billmaker_img/bill dashboard.png" class="slide active">
+                                <img src="img/billmaker_img/sample_bill.png" class="slide">
                             </div>
                         </div>
                     </div>
@@ -224,6 +265,9 @@
                         <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.1 0-5.4-1.6-5.4-3.6 0-2 2.3-3.6 5.2-3.6 2.9 0 5.4 1.6 5.4 3.6zm-33.6-10.3c-.7 1.6 1.6 3.3 5 3.7 3.6.4 7-0.7 7.7-2.3.7-1.6-1.6-3.3-5-3.7-3.6-.3-7 .7-7.7 2.3zm44.8-1.7c-2.9.7-4.7 2.9-4 4.9.7 2 3.6 2.7 6.5 2 2.9-.7 4.7-2.9 4-4.9-.8-1.9-3.6-2.7-6.5-2zM244.8 8C108.3 8 0 116.3 0 252.8c0 107.5 69.8 198.7 166.8 231.4 12.2 2.3 16.6-5.3 16.6-11.7 0-5.8-.2-21.2-.3-41.5-67.8 14.7-82.1-32.7-82.1-32.7-11.1-28.1-27.1-35.6-27.1-35.6-22.1-15.1 1.7-14.8 1.7-14.8 24.4 1.7 37.3 25.1 37.3 25.1 21.7 37.2 56.9 26.5 70.8 20.3 2.2-15.8 8.5-26.5 15.5-32.6-54.1-6.2-110.9-27-110.9-120.3 0-26.6 9.5-48.3 25.1-65.3-2.5-6.1-10.9-30.7 2.4-64 0 0 20.5-6.6 67.1 24.9 19.5-5.4 40.5-8.1 61.3-8.2 20.8.1 41.8 2.8 61.3 8.2 46.5-31.5 67-24.9 67-24.9 13.3 33.3 4.9 57.9 2.4 64 15.7 17 25.1 38.7 25.1 65.3 0 93.5-56.9 114-111 120 8.7 7.5 16.5 22.4 16.5 45.1 0 32.6-.3 58.9-.3 66.9 0 6.5 4.3 14.2 16.7 11.7C426.2 451.5 496 360.3 496 252.8 496 116.3 387.7 8 251.2 8z" />
                     </svg>
                 </a>
+            </div>
+            <div class="cv-section">
+                <a href="cv/Rahul_Gupta_CV.pdf" download class="cv-btn">Download CV</a>
             </div>
         </section>
         <!-- Footer -->
