@@ -43,3 +43,25 @@ document.querySelectorAll(".project-card").forEach(card => {
     card.addEventListener("mouseleave", stopSlider);
 
 });
+
+let  img_url = "img/todo_img/"
+const images = [
+    img_url+"login_page.png",
+    img_url+"dashboard.png",
+    img_url+"add_task.png",
+    img_url+"dashboard2.png",
+    img_url+"task_history.png",
+    img_url+"task_history2.png",
+    img_url+"upcoming_page.png",
+    img_url+"account_info.png",
+    img_url+"regular_page.png",
+    img_url+"singup_page.png"
+];
+
+let index = 0;
+const sliderImage = document.getElementById("sliderImage");
+
+setInterval(() => {
+    index = (index + 1) % images.length;
+    sliderImage.src = images[index];
+}, 1000);

@@ -1,269 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rahul Gupta | Python Developer</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-</head>
-
-<body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="index.html" id="nav_a">
-                <h1 class="logo">R<span>G</span></h1>
-            </a>
-
-            <!-- Hamburger Icon -->
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rahul Gupta | Python Developer</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <nav>
+                <a href="index.html" id="nav_a">
+                    <h1 class="logo">
+                        R<span>G</span>
+                    </h1>
+                </a>
+                <!-- Hamburger Icon -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- Navbar Links -->
+                <ul class="nav-links" id="nav-links">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h2>
+                        Hi, I'm <span>Rahul Gupta</span>
+                    </h2>
+                    <h3>Python Backend Developer | Django • Flask</h3>
+                    <p>
+                      I build practical web applications with clean code and a focus on making things simple and efficient for real users.
+                    </p>
+                    <a href="#projects" class="btn-outline">View My Work</a>
+                    <a href="#contact" class="btn-outline">Let's Connect</a>
+                </div>
             </div>
-
-            <!-- Navbar Links -->
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-container">
-            <div class="hero-text">
-                <h2>Hi, I'm <span>Rahul Gupta</span></h2>
-                <h3>Backend Developer | Django • Flask • Python</h3>
-                <p>
-                    I build scalable and efficient web applications with clean code
-                    and practical, real-world solutions.
-                </p>
-                <a href="#projects" class="btn-outline">View My Work</a>
-                <a href="#contact" class="btn-outline">Let's Connect</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            I’m a backend-focused Python developer working with <b>Django</b> and <b>Flask</b>.
-            I build scalable, efficient web applications and enjoy designing clean backend systems
-            that solve real-world problems. I’m constantly improving my skills and exploring
-            better ways to write maintainable, production-ready code.
-        </p>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <h2>Experience</h2>
-        <div class="experience-card">
-            <h3>TCS iON Internship</h3>
-            <p><strong>Role:</strong> Backend Developer Intern</p>
-            <p><strong>Duration:</strong> July 8, 2025 – August 11, 2025</p>
-            <p class="skill-text-description">
-                During this internship, I worked on building a <strong>CAPTCHA service</strong> to secure a simple web
-                application, implemented using <strong>Java Servlets</strong>.
-                I gained hands-on experience in how APIs work, including handling requests and responses, and learned
-                how to integrate APIs with frontend applications.
-                Additionally, I developed skills in backend development practices, version control with Git & GitHub,
-                and collaborating in a professional project environment.
+        </section>
+        <!-- About -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+             I’m a backend-focused Python developer specializing in <b>Django</b> and <b>Flask</b>. I build scalable and efficient web applications with a strong focus on clean architecture and maintainable code. I enjoy designing backend systems that solve real-world problems and perform reliably in production. Alongside web development, I’m actively expanding my skills in AI and Machine Learning to build smarter, data-driven solutions.
             </p>
-        </div>
-
-    </section>
-
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">Python</div>
-            <div class="skill">Django</div>
-            <div class="skill">Flask</div>
-            <div class="skill">Java</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <!-- <div class="skill">SQLite</div> -->
-            <div class="skill">SQL</div>
-            <!-- <div class="skill">Swing<br>(Basic)</div> -->
-            <!-- <div class="skill">Servlets<br>(Basic)</div> -->
-            <div class="skill">Git & GitHub</div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="card-inner">
-
-                    <!-- FRONT SIDE -->
-                    <div class="card-front">
-                        <h3>Advance TODO Management System</h3>
-                        <p>
-                            An advanced task management system built with <strong>Python and Django</strong> that
-                            enables efficient task organization with features like prioritization, deadline tracking,
-                            status management, and automated recurring tasks.
-                        </p>
-                    </div>
-
-                    <!-- BACK (Slider) -->
-                    <div class="card-back">
-                        <div class="slider">
-                            <img src="img/sms_img/login page.png" class="slide active">
-                            <img src="img/sms_img/dashboard.png" class="slide">
-                            <img src="img/sms_img/students.png" class="slide">
-                            <img src="img/sms_img/enrrolment.png" class="slide">
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Buttons (Always Visible) -->
-                <div class="btn-container">
-                    <a href="https://advance-todo-app-1rt6.onrender.com/" target="_blank" class="btn">Live Demo</a>
-                    <a href="https://github.com/CodageWithRahul/Advance-Todo-app.git" target="_blank"
-                        class="btn-outline">GitHub</a>
-                </div>
+        </section>
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="experience-card">
+                <h3>TCS iON Internship</h3>
+                <p>
+                    <strong>Role:</strong> Backend Developer Intern
+                </p>
+                <p>
+                    <strong>Duration:</strong> July 8, 2025 – August 11, 2025
+                </p>
+                <p class="skill-text-description">
+                    During this internship, I worked on building a <strong>CAPTCHA service</strong> to secure a simple web
+                    application, implemented using <strong>Java Servlets</strong>.
+                    I gained hands-on experience in how APIs work, including handling requests and responses, and learned
+                    how to integrate APIs with frontend applications.
+                    Additionally, I developed skills in backend development practices, version control with Git & GitHub,
+                    and collaborating in a professional project environment.
+                </p>
             </div>
-
-
-            <div class="project-card">
-                <div class="card-inner">
-                    <div class="card-front">
-
-                        <h3>Student Management System</h3>
-                        <p>
-                            A full-stack web application built using <strong>Flask, HTML, CSS, JavaScript, and
-                                SQLite,
-                                leveraging
-                                SQLAlchemy ORM</strong> to efficiently manage student records, course enrollments,
-                            and
-                            academic data. Includes features like CRUD operations, search and filter functionality,
-                            and
-                            secure
-                            user authentication.
-                        </p>
-                    </div>
-                    <!-- BACK SIDE (Image) -->
-                    <div class="card-back">
-                        <div class="slider">
-                            <img src="img/sms_img/login page.png" class="slide active">
-                            <img src="img/sms_img/dashboard.png" class="slide">
-                            <img src="img/sms_img/students.png" class="slide">
-                            <img src="img/sms_img/enrrolment.png" class="slide">
+        </section>
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">Python</div>
+                <div class="skill">Django</div>
+                <div class="skill">Flask</div>
+                <div class="skill">Java</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <!-- <div class="skill">SQLite</div> -->
+                <div class="skill">SQL</div>
+                <!-- <div class="skill">Swing<br>(Basic)</div> -->
+                <!-- <div class="skill">Servlets<br>(Basic)</div> -->
+                <div class="skill">Git & GitHub</div>
+            </div>
+        </section>
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-inner">
+                        <!-- FRONT SIDE -->
+                        <div class="card-front">
+                            <h3>Advance TODO Management System</h3>
+                            <p>
+                                An advanced task management system built with <strong>Python and Django</strong> designed to streamline productivity and task organization. The application includes features such as task prioritization, deadline tracking, status management, automated recurring tasks, and an intuitive user interface to enhance user experience and efficiency.
+                            </p>
+                        </div>
+                        <!-- BACK (Slider) -->
+                        <div class="card-back">
+                            <div class="slider">
+                                <img id="sliderImage" src="img/todo_img/login_page.png" class="slide active">
+                            </div>
                         </div>
                     </div>
+                    <!-- Buttons (Always Visible) -->
+                    <div class="btn-container">
+                        <a href="https://advance-todo-app-1rt6.onrender.com/"
+                           target="_blank"
+                           class="btn">Live Demo</a>
+                        <a href="https://github.com/CodageWithRahul/Advance-Todo-app.git"
+                           target="_blank"
+                           class="btn-outline">GitHub</a>
+                    </div>
                 </div>
-
-                <div class="btn-container"><a href="https://rahul-sms.onrender.com" target="_blank" class="btn">Live
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Student Management System</h3>
+                            <p>
+                                A full-stack web application built using <strong>Flask, HTML, CSS, JavaScript, and SQLite with SQLAlchemy ORM</strong>, designed to efficiently manage student records, course enrollments, and academic data. The system supports complete CRUD operations, advanced search and filtering, and secure user authentication to ensure data integrity and usability.
+                            </p>
+                        </div>
+                        <!-- BACK SIDE (Image) -->
+                        <div class="card-back">
+                            <div class="slider">
+                                <img src="img/sms_img/login page.png" class="slide active">
+                                <img src="img/sms_img/dashboard.png" class="slide">
+                                <img src="img/sms_img/students.png" class="slide">
+                                <img src="img/sms_img/enrrolment.png" class="slide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://rahul-sms.onrender.com" target="_blank" class="btn">Live
                         Demo</a>
-                    <a href="https://github.com/CodageWithRahul/Student-Management-system.git" target="_blank"
-                        class="btn-outline">GitHub</a>
-                </div>
-
-            </div>
-            <div class="project-card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>CAPTCHA Service</h3>
-                        <p>
-                            Developed a secure web-based application during my TCS iON internship using <strong>Java
-                                Servlets</strong>.
-                            Implemented a custom CAPTCHA service to protect forms from automated submissions and gained
-                            hands-on
-                            experience in backend development, request handling, and integrating APIs with the frontend.
-                        </p>
+                        <a href="https://github.com/CodageWithRahul/Student-Management-system.git"
+                           target="_blank"
+                           class="btn-outline">GitHub</a>
                     </div>
-                    <div class="card-back">
-                        <div class="slider">
-                            <img src="img/sms_img/login page.png" class="slide active">
-                            <img src="img/sms_img/dashboard.png" class="slide">
-                            <img src="img/sms_img/students.png" class="slide">
-                            <img src="img/sms_img/enrrolment.png" class="slide">
+                </div>
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>CAPTCHA Service</h3>
+                            <p>
+                                Developed a secure web-based application during my TCS iON internship using <strong>Java Servlets</strong>. Designed and implemented a custom CAPTCHA service to prevent automated form submissions, gaining hands-on experience in backend development, HTTP request handling, and frontend–backend integration.
+                            </p>
+                        </div>
+                        <div class="card-back">
+                            <div class="slider">
+                                <img src="img/captcha_img/captcha_img.png" class="slide active">
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="btn-container"><a href="https://github.com/CodageWithRahul/captcha-service-project.git"
-                        target="_blank" class="btn-outline">GitHub</a></div>
-            </div>
-            <div class="project-card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>Bill Maker</h3>
-                        <p>
-                            A desktop-based billing application built using <strong>Java OOP</strong> with
-                            <strong>Swing</strong> for the user interface, designed for Internet Service Providers to
-                            manage
-                            broadband and cable invoices efficiently.
-                            Features include invoice generation, editable customer data, Excel export, watermark
-                            support, and
-                            optimized print layouts for professional billing management.
-                        </p>
+                    <div class="btn-container">
+                        <a href="https://github.com/CodageWithRahul/captcha-service-project.git"
+                           target="_blank"
+                           class="btn-outline">GitHub</a>
                     </div>
-                    <div class="card-back">
-                        <div class="slider">
-                            <img src="img/sms_img/login page.png" class="slide active">
-                            <img src="img/sms_img/dashboard.png" class="slide">
-                            <img src="img/sms_img/students.png" class="slide">
-                            <img src="img/sms_img/enrrolment.png" class="slide">
+                </div>
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Bill Maker</h3>
+                            <p>
+                                Developed a desktop-based billing application using <strong>Java (OOP principles)</strong> with <strong>Swing</strong> for the user interface, tailored for Internet Service Providers to efficiently manage broadband and cable invoices. The system includes invoice generation, editable customer records, Excel export functionality, watermark integration, and optimized print layouts for professional billing operations.
+                            </p>
+                        </div>
+                        <div class="card-back">
+                            <div class="slider">
+                                <img src="img/billmaker_img/bill dashboard.png" class="slide active">
+                            </div>
                         </div>
                     </div>
+                    <div class="btn-container">
+                        <a href="https://github.com/CodageWithRahul/Bill-Maker/releases"
+                           target="_blank"
+                           class="btn-outline">GitHub</a>
+                    </div>
                 </div>
-
-                <div class="btn-container"><a href="https://github.com/CodageWithRahul/Bill-Maker/releases"
-                        target="_blank" class="btn-outline">GitHub</a></div>
             </div>
-
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <div class="contact-icons">
-            <!-- Email -->
-            <a href="mailto:rahulguptaa650@gmail.com" target="_blank" title="Email">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M502.3 190.8l-192-160c-15.5-12.9-38.5-12.9-54 0l-192 160c-12.3 10.3-15.3 28-7 41.3s26.1 20 41.3 12.7L256 143.5l209.7 101.3c15.2 7.3 33.7-0.3 41.3-12.7s5.3-30.9-7-41.3z" />
-                </svg>
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/rahul-gupta-24and27" target="_blank" title="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path
-                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.1 108.1 0 83.9 0 54.2S24.1 0 53.79 0 107.6 24.1 107.6 54.2 83.5 108.1 53.79 108.1zM447.9 448h-92.68V302.4c0-34.7-12.5-58.4-43.8-58.4-23.9 0-38.1 16-44.4 31.5-2.3 5.5-2.8 13.1-2.8 20.7V448h-92.7s1.2-241 0-266.9h92.7v37.9c12.3-19 34.4-46 83.8-46 61.2 0 107.2 40 107.2 125.8V448z" />
-                </svg>
-            </a>
-
-            <!-- GitHub -->
-            <a href="https://github.com/CodageWithRahul" target="_blank" title="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                    <path
-                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.1 0-5.4-1.6-5.4-3.6 0-2 2.3-3.6 5.2-3.6 2.9 0 5.4 1.6 5.4 3.6zm-33.6-10.3c-.7 1.6 1.6 3.3 5 3.7 3.6.4 7-0.7 7.7-2.3.7-1.6-1.6-3.3-5-3.7-3.6-.3-7 .7-7.7 2.3zm44.8-1.7c-2.9.7-4.7 2.9-4 4.9.7 2 3.6 2.7 6.5 2 2.9-.7 4.7-2.9 4-4.9-.8-1.9-3.6-2.7-6.5-2zM244.8 8C108.3 8 0 116.3 0 252.8c0 107.5 69.8 198.7 166.8 231.4 12.2 2.3 16.6-5.3 16.6-11.7 0-5.8-.2-21.2-.3-41.5-67.8 14.7-82.1-32.7-82.1-32.7-11.1-28.1-27.1-35.6-27.1-35.6-22.1-15.1 1.7-14.8 1.7-14.8 24.4 1.7 37.3 25.1 37.3 25.1 21.7 37.2 56.9 26.5 70.8 20.3 2.2-15.8 8.5-26.5 15.5-32.6-54.1-6.2-110.9-27-110.9-120.3 0-26.6 9.5-48.3 25.1-65.3-2.5-6.1-10.9-30.7 2.4-64 0 0 20.5-6.6 67.1 24.9 19.5-5.4 40.5-8.1 61.3-8.2 20.8.1 41.8 2.8 61.3 8.2 46.5-31.5 67-24.9 67-24.9 13.3 33.3 4.9 57.9 2.4 64 15.7 17 25.1 38.7 25.1 65.3 0 93.5-56.9 114-111 120 8.7 7.5 16.5 22.4 16.5 45.1 0 32.6-.3 58.9-.3 66.9 0 6.5 4.3 14.2 16.7 11.7C426.2 451.5 496 360.3 496 252.8 496 116.3 387.7 8 251.2 8z" />
-                </svg>
-            </a>
-        </div>
-    </section>
-
-
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Rahul Gupta | Built with 💻 and ☕</p>
-    </footer>
-</body>
-
+        </section>
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-icons">
+                <!-- Email -->
+                <a href="mailto:rahulguptaa650@gmail.com" target="_blank" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M502.3 190.8l-192-160c-15.5-12.9-38.5-12.9-54 0l-192 160c-12.3 10.3-15.3 28-7 41.3s26.1 20 41.3 12.7L256 143.5l209.7 101.3c15.2 7.3 33.7-0.3 41.3-12.7s5.3-30.9-7-41.3z" />
+                    </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/rahul-gupta-24and27"
+                   target="_blank"
+                   title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.1 108.1 0 83.9 0 54.2S24.1 0 53.79 0 107.6 24.1 107.6 54.2 83.5 108.1 53.79 108.1zM447.9 448h-92.68V302.4c0-34.7-12.5-58.4-43.8-58.4-23.9 0-38.1 16-44.4 31.5-2.3 5.5-2.8 13.1-2.8 20.7V448h-92.7s1.2-241 0-266.9h92.7v37.9c12.3-19 34.4-46 83.8-46 61.2 0 107.2 40 107.2 125.8V448z" />
+                    </svg>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/CodageWithRahul"
+                   target="_blank"
+                   title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.1 0-5.4-1.6-5.4-3.6 0-2 2.3-3.6 5.2-3.6 2.9 0 5.4 1.6 5.4 3.6zm-33.6-10.3c-.7 1.6 1.6 3.3 5 3.7 3.6.4 7-0.7 7.7-2.3.7-1.6-1.6-3.3-5-3.7-3.6-.3-7 .7-7.7 2.3zm44.8-1.7c-2.9.7-4.7 2.9-4 4.9.7 2 3.6 2.7 6.5 2 2.9-.7 4.7-2.9 4-4.9-.8-1.9-3.6-2.7-6.5-2zM244.8 8C108.3 8 0 116.3 0 252.8c0 107.5 69.8 198.7 166.8 231.4 12.2 2.3 16.6-5.3 16.6-11.7 0-5.8-.2-21.2-.3-41.5-67.8 14.7-82.1-32.7-82.1-32.7-11.1-28.1-27.1-35.6-27.1-35.6-22.1-15.1 1.7-14.8 1.7-14.8 24.4 1.7 37.3 25.1 37.3 25.1 21.7 37.2 56.9 26.5 70.8 20.3 2.2-15.8 8.5-26.5 15.5-32.6-54.1-6.2-110.9-27-110.9-120.3 0-26.6 9.5-48.3 25.1-65.3-2.5-6.1-10.9-30.7 2.4-64 0 0 20.5-6.6 67.1 24.9 19.5-5.4 40.5-8.1 61.3-8.2 20.8.1 41.8 2.8 61.3 8.2 46.5-31.5 67-24.9 67-24.9 13.3 33.3 4.9 57.9 2.4 64 15.7 17 25.1 38.7 25.1 65.3 0 93.5-56.9 114-111 120 8.7 7.5 16.5 22.4 16.5 45.1 0 32.6-.3 58.9-.3 66.9 0 6.5 4.3 14.2 16.7 11.7C426.2 451.5 496 360.3 496 252.8 496 116.3 387.7 8 251.2 8z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Rahul Gupta | Built with 💻 and ☕</p>
+        </footer>
+    </body>
 </html>
