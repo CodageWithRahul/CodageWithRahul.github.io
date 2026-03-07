@@ -379,6 +379,25 @@ nav {
     overflow: hidden;
 }
 
+/* Demo login box */
+.demo-login {
+    background: rgba(255,255,255,0.08);
+    padding: 10px;
+    border-radius: 6px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.demo-login h5 {
+    margin-bottom: 5px;
+}
+.demo-note{
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
 .card-back {
     position: absolute;
     width: 100%;
