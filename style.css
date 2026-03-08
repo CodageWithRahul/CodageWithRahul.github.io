@@ -93,7 +93,7 @@ nav {
     height: 100vh;
     background: 
         linear-gradient(rgba(13,17,23,0.85), rgba(26,22,37,0.3)),
-        url("img/hero_img1.png");
+        url("img/hero_img1.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -600,7 +600,7 @@ nav {
     width: 100%;
     background:
         linear-gradient(rgba(13,17,23,0.92), rgba(13,17,23,0.30)),
-        url("img/ai_bg.png");
+        url("img/ai_bg.webp");
 
     background-size: cover;
     background-position: center;
@@ -612,7 +612,7 @@ nav {
     width: 100%;
     background:
         linear-gradient(rgba(13,17,23,0.92), rgba(13,17,23,0.30)),
-        url("img/standing_human_ai.png");
+        url("img/standing_human_ai.webp");
 
     background-size: cover;
     background-position: center;
