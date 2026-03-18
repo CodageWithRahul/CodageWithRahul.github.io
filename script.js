@@ -1,13 +1,18 @@
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
-const card = document.querySelector(".project-card");
-const slides = card.querySelectorAll(".slide");
 const layers = document.querySelectorAll(".cursor-layer");
 
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+    });
+  });
+}
 
 // Scroll reveal effect for sections
 const sections = document.querySelectorAll(".section");
@@ -65,7 +70,9 @@ const sliderImage = document.getElementById("sliderImage");
 
 setInterval(() => {
     index = (index + 1) % images.length;
-    sliderImage.src = images[index];
+    if (sliderImage) {
+        sliderImage.src = images[index];
+    }
 }, 1000);
 
 
