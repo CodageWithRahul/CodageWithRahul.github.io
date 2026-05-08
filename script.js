@@ -31,6 +31,7 @@ revealOnScroll();
 document.querySelectorAll(".project-card").forEach(card => {
 
     const slides = card.querySelectorAll(".slide");
+    if (slides.length === 0) return;
     let index = 0;
     let interval = null;
 
@@ -51,27 +52,49 @@ document.querySelectorAll(".project-card").forEach(card => {
 
 });
 
-let  img_url = "img/todo_img/"
-const images = [
-    img_url+"login_page.png",
-    img_url+"dashboard.png",
-    img_url+"add_task.png",
-    img_url+"dashboard2.png",
-    img_url+"task_history.png",
-    img_url+"task_history2.png",
-    img_url+"upcoming_page.png",
-    img_url+"account_info.png",
-    img_url+"regular_page.png",
-    img_url+"singup_page.png"
+const dpdpImages = [
+    "img/dpdp_cloud_auditor/login.png",
+    "img/dpdp_cloud_auditor/signup.png",
+    "img/dpdp_cloud_auditor/dashboard.png",
+    "img/dpdp_cloud_auditor/connected_account.png",
+    "img/dpdp_cloud_auditor/Add_account.png",
+    "img/dpdp_cloud_auditor/scan_history.png",
+    "img/dpdp_cloud_auditor/overview.png",
+    "img/dpdp_cloud_auditor/risk_v.png",
+    "img/dpdp_cloud_auditor/action_plan.png",
+    "img/dpdp_cloud_auditor/top_problems.png",
+    "img/dpdp_cloud_auditor/top_risk.png",
+    "img/dpdp_cloud_auditor/Vur.png",
+    "img/dpdp_cloud_auditor/log_export.png",
+    "img/dpdp_cloud_auditor/profile.png",
 ];
 
-let index = 0;
+const todoImages = [
+    "img/todo_img/login_page.png",
+    "img/todo_img/dashboard.png",
+    "img/todo_img/add_task.png",
+    "img/todo_img/dashboard2.png",
+    "img/todo_img/task_history.png",
+    "img/todo_img/task_history2.png",
+    "img/todo_img/upcoming_page.png",
+    "img/todo_img/account_info.png",
+    "img/todo_img/regular_page.png",
+    "img/todo_img/singup_page.png"
+];
+
+let dpdpIndex = 0;
+let todoIndex = 0;
 const sliderImage = document.getElementById("sliderImage");
+const dpdpSliderImage = document.getElementById("dpdpSliderImage");
 
 setInterval(() => {
-    index = (index + 1) % images.length;
+    dpdpIndex = (dpdpIndex + 1) % dpdpImages.length;
+    todoIndex = (todoIndex + 1) % todoImages.length;
     if (sliderImage) {
-        sliderImage.src = images[index];
+        sliderImage.src = todoImages[todoIndex];
+    }
+    if (dpdpSliderImage) {
+        dpdpSliderImage.src = dpdpImages[dpdpIndex];
     }
 }, 1000);
 
