@@ -82,19 +82,36 @@ const todoImages = [
     "img/todo_img/singup_page.png"
 ];
 
+const lockbytesImages = [
+    "img/lockbytes_img/1st.png",
+    "img/lockbytes_img/2nd.png",
+    "img/lockbytes_img/3rd.png",
+    "img/lockbytes_img/4th.png",
+    "img/lockbytes_img/5th.png",
+    "img/lockbytes_img/6th.png",
+    "img/lockbytes_img/7th.png",
+    
+];
+
 let dpdpIndex = 0;
 let todoIndex = 0;
+let lockbytesIndex = 0;
 const sliderImage = document.getElementById("sliderImage");
 const dpdpSliderImage = document.getElementById("dpdpSliderImage");
+const lockbytesSliderImage = document.getElementById("lockbytesSliderImage");
 
 setInterval(() => {
     dpdpIndex = (dpdpIndex + 1) % dpdpImages.length;
     todoIndex = (todoIndex + 1) % todoImages.length;
+    lockbytesIndex = (lockbytesIndex + 1) % lockbytesImages.length;
     if (sliderImage) {
         sliderImage.src = todoImages[todoIndex];
     }
     if (dpdpSliderImage) {
         dpdpSliderImage.src = dpdpImages[dpdpIndex];
+    }
+    if (lockbytesSliderImage) {
+        lockbytesSliderImage.src = lockbytesImages[lockbytesIndex];
     }
 }, 1000);
 
