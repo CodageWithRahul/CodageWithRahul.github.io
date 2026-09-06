@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+    --ink: #10253f;
+    --muted: #5f7083;
+    --paper: #fffdf8;
+    --line: #e9e2d6;
+    --amber: #f3a62f;
+    --amber-dark: #bd6d0d;
+    --coral: #e76b5d;
+    --navy: #10253f;
+    --cream: #f6f0e5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 28px;
+    color: var(--ink);
+    background: #e7eef0;
+    background-image: radial-gradient(#c9d5d8 1px, transparent 1px);
+    background-size: 24px 24px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.page-shell {
+    width: min(1080px, 100%);
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid rgba(16, 37, 63, .12);
+    border-radius: 22px;
+    background: var(--paper);
+    box-shadow: 0 24px 70px rgba(16, 37, 63, .16);
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 68px clamp(28px, 7vw, 84px) 64px;
+    color: #fff;
+    background: var(--navy);
+}
+
+.hero::after {
+    position: absolute;
+    right: -80px;
+    bottom: -130px;
+    width: 330px;
+    height: 330px;
+    border: 42px solid rgba(243, 166, 47, .2);
+    border-radius: 50%;
+    content: '';
+}
+
+.eyebrow {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+    color: #ffd58d;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.eyebrow::before {
+    width: 22px;
+    height: 3px;
+    border-radius: 99px;
+    background: var(--coral);
+    content: '';
+}
+
+.hero h1,
+h2,
+h3 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    font-size: clamp(2.4rem, 6vw, 4.7rem);
+    line-height: .98;
+    letter-spacing: -.04em;
+}
+
+.hero p {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin-top: 25px;
+    color: #d9e2e7;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
+    gap: 52px;
+    padding: clamp(30px, 6vw, 68px);
+}
+
+.intro h2 {
+    max-width: 600px;
+    font-size: clamp(1.8rem, 4vw, 2.65rem);
+    line-height: 1.08;
+    letter-spacing: -.035em;
+}
+
+.intro > p {
+    max-width: 650px;
+    margin-top: 17px;
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.impact-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 33px;
+    list-style: none;
+}
+
+.impact-list li {
+    padding: 17px 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fff;
+    font-size: .95rem;
+    font-weight: 600;
+}
+
+.impact-list li::before {
+    display: inline-grid;
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--coral);
+    content: '\2713';
+    font-size: .75rem;
+}
+
+.transparency {
+    margin-top: 31px;
+    padding: 20px 22px;
+    border-left: 4px solid var(--amber);
+    border-radius: 0 12px 12px 0;
+    background: var(--cream);
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.transparency strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--ink);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.donation-card {
+    align-self: start;
+    padding: 25px;
+    border: 1px solid #ead9b9;
+    border-radius: 16px;
+    background: #fff8e9;
+    box-shadow: 0 12px 28px rgba(189, 109, 13, .1);
+    text-align: center;
+}
+
+.donation-card h2 {
+    font-size: 1.5rem;
+}
+
+.donation-card > p {
+    margin: 9px 0 19px;
+    color: var(--muted);
+    font-size: .92rem;
+    line-height: 1.5;
+}
+
+.qr-frame {
+    padding: 13px;
+    border-radius: 13px;
+    background: #fff;
+}
+
+.qr-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.scan-note {
+    display: block;
+    margin: 15px 0 17px;
+    color: var(--amber-dark);
+    font-size: .86rem;
+    font-weight: 700;
+}
+
+.payment-id {
+    padding: 12px;
+    border: 1px dashed #d9ba82;
+    border-radius: 9px;
+    color: var(--ink);
+    background: #fffdf8;
+    font-size: .8rem;
+    overflow-wrap: anywhere;
+}
+
+.payment-id span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--muted);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.contact {
+    margin-top: 23px;
+    padding-top: 20px;
+    border-top: 1px solid #ead9b9;
+    color: var(--muted);
+    font-size: .87rem;
+    line-height: 1.65;
+}
+
+.contact strong {
+    color: var(--ink);
+}
+
+.contact a {
+    color: var(--amber-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer {
+    padding: 23px 30px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .85rem;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 12px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .donation-card {
+        max-width: 420px;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 470px) {
+    .hero {
+        padding: 48px 24px 46px;
+    }
+
+    .content {
+        padding: 35px 22px;
+    }
+
+    .impact-list {
+        grid-template-columns: 1fr;
+    }
+}

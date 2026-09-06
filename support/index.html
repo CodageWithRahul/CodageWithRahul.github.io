@@ -6,378 +6,69 @@
 
 <title>Support LockBytes</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Inter',sans-serif;
-}
-
-body{
-
-    background:#0f172a;
-    color:white;
-    min-height:100vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    padding:40px;
-}
-
-.container{
-
-    max-width:900px;
-    width:100%;
-
-    background:#111827;
-
-    border:1px solid #1f2937;
-
-    border-radius:24px;
-
-    overflow:hidden;
-
-    box-shadow:0 20px 60px rgba(0,0,0,.45);
-
-}
-
-.header{
-
-    text-align:center;
-
-    padding:55px 40px;
-
-    background:linear-gradient(135deg,#2563eb,#4f46e5);
-}
-
-.header h1{
-
-    font-size:42px;
-    margin-bottom:15px;
-}
-
-.header p{
-
-    max-width:650px;
-    margin:auto;
-    line-height:1.7;
-    color:#e5e7eb;
-}
-
-.content{
-
-    display:grid;
-
-    grid-template-columns:1fr 350px;
-
-    gap:40px;
-
-    padding:45px;
-}
-
-@media(max-width:850px){
-
-.content{
-
-grid-template-columns:1fr;
-
-}
-
-}
-
-.card{
-
-    background:#1f2937;
-
-    border-radius:18px;
-
-    padding:28px;
-
-}
-
-.card h2{
-
-    margin-bottom:18px;
-}
-
-.card p{
-
-    color:#cbd5e1;
-
-    line-height:1.8;
-
-}
-
-ul{
-
-    margin-top:20px;
-    padding-left:20px;
-}
-
-li{
-
-    margin-bottom:12px;
-    color:#d1d5db;
-
-}
-
-.qr{
-
-    text-align:center;
-}
-
-.qr img{
-
-    width:240px;
-    height:240px;
-
-    object-fit:cover;
-
-    border-radius:14px;
-
-    background:white;
-
-    padding:12px;
-}
-
-.upi{
-
-    margin-top:25px;
-
-    background:#0f172a;
-
-    border-radius:12px;
-
-    padding:15px;
-}
-
-.upi h3{
-
-    margin-bottom:10px;
-}
-
-.code{
-
-    background:#111827;
-
-    border-radius:10px;
-
-    padding:12px;
-
-    font-weight:600;
-
-    word-break:break-all;
-
-    margin-bottom:15px;
-}
-
-button{
-
-    width:100%;
-
-    border:none;
-
-    background:#2563eb;
-
-    color:white;
-
-    padding:14px;
-
-    border-radius:10px;
-
-    cursor:pointer;
-
-    font-size:15px;
-
-    transition:.25s;
-}
-
-button:hover{
-
-    background:#1d4ed8;
-}
-
-.footer{
-
-    border-top:1px solid #1f2937;
-
-    text-align:center;
-
-    padding:30px;
-
-    color:#9ca3af;
-
-}
-
-a{
-
-    color:#60a5fa;
-
-    text-decoration:none;
-}
-
-.warning{
-
-    margin-top:25px;
-
-    padding:18px;
-
-    background:#172554;
-
-    border-left:4px solid #3b82f6;
-
-    border-radius:10px;
-
-    color:#dbeafe;
-
-    line-height:1.7;
-}
-
-</style>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support the independent development of LockBytes.">
+    <title>Support LockBytes</title>
+    <link rel="stylesheet" href="support.css">
 </head>
-
 <body>
-
-<div class="container">
-
-<div class="header">
-
-<h1>❤️ Support LockBytes</h1>
-
-<p>
-
-Thank you for using LockBytes.
-
-If LockBytes has helped protect your important files, improved your privacy, or made your work easier, you can support future development with a voluntary donation.
-
-Every contribution helps improve security, fix bugs, and build new features.
-
-</p>
-
-</div>
-
-<div class="content">
-
-<div>
-
-<div class="card">
-
-<h2>Why Donate?</h2>
-
-<p>
-
-LockBytes is developed and maintained by a single independent developer.
-
-Your support helps keep the project alive and allows continuous improvements without making the application paid.
-
-</p>
-
-<ul>
-
-<li>🔒 Better security features</li>
-
-<li>🚀 Faster updates</li>
-
-<li>🐞 Bug fixes</li>
-
-<li>☁️ Improved cloud recovery</li>
-
-<li>💻 Future platform support</li>
-
-<li>❤️ Continued development</li>
-
-</ul>
-
-<div class="warning">
-
-<strong>Transparency</strong><br><br>
-
-Donations are completely optional.
-
-Every feature of LockBytes will remain available whether you donate or not.
-
-Thank you for supporting independent software development.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div class="card qr">
-
-<img src="qr.jpeg" alt="UPI QR Code">
-
-<!-- <div class="upi">
-
-<h3>UPI ID</h3>
-
-<div class="code" id="upi">
-
-
-</div>
-
-<button onclick="copyUPI()">
-
-Copy UPI ID
-
-</button>
-
-</div> -->
-
-<hr style="margin:25px 0;border:0;border-top:1px solid #374151;">
-
-<p>
-
-<strong>Developer</strong><br>
-
-Rahul Gupta
-
-<br><br>
-
-📧 codagewithrahul23@gmail.com
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="footer">
-
-Made with ❤️ for the LockBytes community.
-
-<br><br>
-
-
-</div>
-
-</div>
-
-<script>
-
-function copyUPI(){
-
-const text=document.getElementById("upi").innerText;
-
-navigator.clipboard.writeText(text);
-
-alert("UPI ID copied!");
-
-}
-
-</script>
-
+    <main class="page-shell">
+        <header class="hero">
+            <span class="eyebrow">Keep independent software moving</span>
+            <h1>Help LockBytes stay secure, useful, and free.</h1>
+            <p>
+                If LockBytes has protected your files or made your work a little easier,
+                a small contribution helps one independent developer keep improving it.
+            </p>
+        </header>
+
+        <section class="content" aria-labelledby="impact-heading">
+            <div class="intro">
+                <h2 id="impact-heading">Your support becomes better software.</h2>
+                <p>
+                    LockBytes is maintained independently. Contributions create more time
+                    for the work users feel most: stronger security, thoughtful updates,
+                    and dependable recovery tools.
+                </p>
+
+                <ul class="impact-list">
+                    <li>Stronger security features</li>
+                    <li>Faster bug fixes</li>
+                    <li>Cloud recovery improvements</li>
+                    <li>Future platform support</li>
+                </ul>
+
+                <div class="transparency">
+                    <strong>Contribute only if LockBytes has helped you.</strong>
+                    Donations are completely optional. Every feature will remain available
+                    whether you contribute or not, and every amount is appreciated.
+                </div>
+            </div>
+
+            <aside class="donation-card" aria-labelledby="donation-heading">
+                <h2 id="donation-heading">Make a contribution</h2>
+                <p>Scan with any UPI app. Choose an amount that feels right for you.</p>
+                <div class="qr-frame">
+                    <img src="qr.jpeg" alt="UPI QR code for supporting LockBytes">
+                </div>
+                <span class="scan-note">Scan to support LockBytes</span>
+                <div class="payment-id">
+                    <span>UPI ID</span>
+                    rahulguptaa64@okhdfcbank
+                </div>
+                <div class="contact">
+                    <strong>Rahul Gupta</strong><br>
+                    Independent developer<br>
+                    <a href="mailto:codagewithrahul23@gmail.com">codagewithrahul23@gmail.com</a>
+                </div>
+            </aside>
+        </section>
+
+        <footer class="footer">Thank you for helping LockBytes continue.</footer>
+    </main>
 </body>
 </html>
