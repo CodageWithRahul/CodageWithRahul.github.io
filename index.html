@@ -1,440 +1,1161 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rahul Gupta | Python Developer</title>
-        <link rel="stylesheet" href="style.css" />
-        <script defer src="script.js"></script>
-    </head>
-    <body>
-        <div class="cursor-layer layer1"></div>
-        <div class="cursor-layer layer2"></div>
-        <div class="cursor-layer layer3"></div>
-        <div class="cursor-layer layer4"></div>
-        <!-- Header -->
-        <header>
-            <nav>
-                <a href="index.html" id="nav_a">
-                    <h1 class="logo">
-                        R<span>G</span>
-                    </h1>
-                </a>
-                <!-- Hamburger Icon -->
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <!-- Navbar Links -->
-                <ul class="nav-links" id="nav-links">
-                    <li>
-                        <a href="cv/Rahul_Gupta_CV.pdf" target="_blank" download>Download CV</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero-container">
-                <div class="hero-text">
-                    <h2>
-                        Hi, I'm <span>Rahul Gupta</span>
-                    </h2>
-                    <h3>Python Backend Developer | Learning Cloud & Security</h3>
-                    <p>
-                        I build practical web applications with clean code and a focus on making things simple and efficient for real users.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn-outline">View My Work</a>
-                        <a href="#contact" class="btn-outline">Let's Connect</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About -->
-        <section class="parallax-wrapper">
-            <section id="about" class="section parallax-section">
-                <h2>About Me</h2>
-                <p>
-                    I’m a backend-focused Python developer specializing in <b>Django</b> and <b>Flask</b>. I build scalable and efficient web applications with a strong focus on clean architecture and maintainable code. I enjoy designing backend systems that solve real-world problems and perform reliably in production. Alongside web development, I’m actively expanding my skills in AI and Machine Learning to build smarter, data-driven solutions.
-                </p>
-            </section>
-            <!-- Experience Section -->
-            <section id="experience" class="section">
-                <h2>Experience</h2>
 
-                 <!-- Mervice -->
-                <div class="experience-card">
-                    <div class="experience-header">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul Gupta | Python Backend & Cloud Security Developer</title>
+    <meta name="description"
+        content="Portfolio of Rahul Gupta - Backend Python Developer specializing in Django, Flask, Cloud Security Auditing, and Hardware-Bound Cryptography." />
+    <meta name="keywords"
+        content="Rahul Gupta, Python Developer, Django, Flask, Cloud Security, DPDP Cloud Auditor, LockBytes, Software Engineer, Portfolio" />
+    <meta name="author" content="Rahul Gupta" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Script (Defer) -->
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Ambient Animated Background -->
+    <div class="ambient-glow">
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+        <div class="glow-orb glow-orb-3"></div>
+    </div>
+
+    <!-- Mouse Light Follower (Desktop) -->
+    <div class="mouse-follower" aria-hidden="true"></div>
+
+    <!-- Sticky Glass Header -->
+    <header>
+        <nav class="container">
+            <a href="#hero" class="logo" aria-label="Rahul Gupta Home">
+                <span class="logo-badge">RG</span>
+                <span class="logo-text">Rahul<span>.dev</span></span>
+            </a>
+
+            <!-- Mobile Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Nav Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="btn-resume-mobile">
+                    <a href="cv/Rahul_Gupta_CV.pdf" target="_blank" download class="btn-resume">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download CV
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Desktop Resume CTA -->
+            <div class="nav-cta">
+                <a href="cv/Rahul_Gupta_CV.pdf" target="_blank" download class="btn-resume nav-resume-desktop">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download CV
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-grid">
+
+            <!-- Left Content -->
+            <div class="hero-content">
+                <div class="status-pill">
+                    <span class="status-indicator"></span>
+                    <span>Open to Backend & Cloud Engineering Roles</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Hi, I'm <span class="name-highlight">Rahul Gupta</span>
+                </h1>
+
+                <div class="hero-role-wrapper">
+                    <span class="role-prefix">&gt;</span>
+                    <span>Python Backend Developer &bull; Cloud & Security</span>
+                </div>
+
+                <p class="hero-desc">
+                    I design and engineer dependable, high-performance backend systems and cloud platforms with
+                    <strong>Python, Django, Flask, and Java</strong>. From multi-cloud security auditing engines to
+                    hardware-bound USB encryption vaults, I focus on clean architecture, security, and real-world
+                    impact.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#projects" class="btn-primary">
+                        <span>Explore Projects</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+
+                    <a href="#contact" class="btn-secondary">
+                        <span>Let's Connect</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/CodageWithRahul" target="_blank" rel="noopener noreferrer"
+                        class="social-link" title="GitHub Profile">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rahul-gupta-24and27" target="_blank" rel="noopener noreferrer"
+                        class="social-link" title="LinkedIn Profile">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:rahulguptaa650@gmail.com" class="social-link" title="Direct Email">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l9.518 7.713 9.518-7.713v11.817h-19.036z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Visual: Rahul's Professional Portrait -->
+            <div class="hero-visual">
+                <div class="avatar-wrapper">
+                    <div class="avatar-glow-ring"></div>
+                    <div class="avatar-card">
+                        <img src="img/my_pic/rahul-pic-63.jpg" alt="Rahul Gupta - Python Backend Developer"
+                            class="avatar-img" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Metrics Bar -->
+        <div class="container">
+            <div class="metrics-bar">
+                <div class="metric-item">
+                    <div class="metric-number">6+</div>
+                    <div class="metric-label">Engineered Projects</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-number">AES-256</div>
+                    <div class="metric-label">Hardware-Bound Vaults</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-number">Multi-Cloud</div>
+                    <div class="metric-label">AWS &bull; Azure &bull; GCP Auditing</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-number">100%</div>
+                    <div class="metric-label">Clean Code &amp; Security Focus</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Engineering Mindset</span>
+                <h2 class="section-title">Driven by <span class="gradient-text">Clean Backend Systems</span></h2>
+                <p class="section-subtitle">A closer look at my engineering philosophy and technical expertise.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a backend-focused developer specializing in <strong>Python, Django, and Flask</strong>,
+                        dedicated to designing scalable architectures, secure APIs, and reliable database structures. I
+                        thrive on translating real-world problems into robust software that performs smoothly under
+                        load.
+                    </p>
+                    <p>
+                        My work spans multi-cloud security audits (scanning AWS, Azure, and GCP resources for compliance
+                        risks), hardware-bound desktop encryption systems utilizing <strong>AES-256-GCM</strong>, and
+                        full-stack enterprise management applications.
+                    </p>
+                    <p>
+                        Beyond traditional web development, I am actively diving deep into <strong>Artificial
+                            Intelligence, Machine Learning, and Cloud Security automation</strong> to develop smarter,
+                        next-generation solutions.
+                    </p>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-box">
+                        <div class="highlight-icon">⚡</div>
+                        <h4>Backend Architecture</h4>
+                        <p>Django &amp; Flask RESTful APIs, relational schema design with SQLAlchemy, and modular
+                            architectures.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-icon">🛡️</div>
+                        <h4>Cloud &amp; Security</h4>
+                        <p>Automated vulnerability scanning across AWS, Azure, and GCP with compliance risk scoring.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-icon">🔐</div>
+                        <h4>Hardware-Bound Crypto</h4>
+                        <p>Zero-trust file encryption using AES-256-GCM authenticated ciphers and physical USB pairing.
+                        </p>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-icon">🤖</div>
+                        <h4>AI &amp; Automation</h4>
+                        <p>Exploring ML pipelines and agentic automation to elevate application intelligence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Career Journey</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+                <p class="section-subtitle">Real-world roles where I built solutions and collaborated across teams.</p>
+            </div>
+
+            <div class="timeline">
+
+
+                <!-- Experience Item: Mervice -->
+                <div class="timeline-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
                         <div>
-                            <h3>Customer Support Associate</h3>
-                            <div class="experience-meta">
-                                <span>Mervice Infotech Pvt. Ltd.</span>
-                                <span>•</span>
-                                <span>June 2026 – Present</span>
-                            </div>
+                            <h3 class="timeline-role">Customer Support Associate</h3>
+                            <div class="timeline-company">Mervice Infotech Pvt. Ltd.</div>
                         </div>
+                        <span class="timeline-period">June 2026 &ndash; Aug 2026</span>
                     </div>
-                    <div class="experience-grid">
-                        <div class="experience-item">
-                            <h4>Customer Support</h4>
-                            <p>
-                                Assisted customers by resolving service inquiries efficiently
-                                through inbound call support.
-                            </p>
-                        </div>
-                        <div class="experience-item">
-                            <h4>CRM Management</h4>
-                            <p>
-                                Maintained accurate customer records while ensuring compliance
-                                with organizational standards.
-                            </p>
-                        </div>
-                        <div class="experience-item">
-                            <h4>Performance</h4>
-                            <p>
-                                Consistently achieved quality, productivity, and customer
-                                satisfaction targets.
-                            </p>
-                        </div>
-                        <div class="experience-item">
-                            <h4>Professional Skills</h4>
-                            <p>
-                                Strengthened communication, teamwork, problem-solving, and
-                                client interaction skills.
-                            </p>
+                    <div class="timeline-body">
+                        <ul>
+                            <li><strong>Client Technical Support:</strong> Handled complex service inquiries and
+                                troubleshooting through inbound support, achieving consistent high CSAT scores.</li>
+                            <li><strong>CRM &amp; Data Integrity:</strong> Maintained strict CRM client records,
+                                verified data accuracy, and complied with enterprise operational standards.</li>
+                            <li><strong>Cross-Functional Problem Solving:</strong> Communicated technical issues
+                                directly to engineering teams to expedite bug resolution.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag-badge">CRM Management</span>
+                            <span class="tag-badge">Customer Success</span>
+                            <span class="tag-badge">Technical Troubleshooting</span>
                         </div>
                     </div>
                 </div>
-                <!-- Software Development -->
-                <div class="experience-card">
-                    <div class="experience-header">
+
+
+                <div class="timeline-card">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-header">
                         <div>
-                            <h3>Software Development Intern</h3>
-                            <div class="experience-meta">
-                                <span>TCS iON</span>
-                                <span>•</span>
-                                <span>July 2025 – August 2025</span>
-                            </div>
+                            <h3 class="timeline-role">Broadband Technician</h3>
+                            <div class="timeline-company">Nirmal Broadband Network</div>
                         </div>
+
+                        <span class="timeline-period">July 2018 &ndash; Nov 2025</span>
                     </div>
-                    <div class="experience-grid">
-                        <div class="experience-item">
-                            <h4>Designed & Developed</h4>
-                            <p>
-                                Built a secure, reusable CAPTCHA service using Java Servlets to
-                                protect web applications from automated bot submissions.
-                            </p>
-                        </div>
-                        <div class="experience-item">
-                            <h4>Enhanced Security</h4>
-                            <p>
-                                Implemented dynamic CAPTCHA generation with randomized characters
-                                and secure backend validation.
-                            </p>
-                        </div>
-                        <div class="experience-item">
-                            <h4>Scalable Architecture</h4>
-                            <p>
-                                Designed the solution for seamless integration across login,
-                                registration, contact, and feedback modules.
-                            </p>
-                        </div>
-                        <div class="experience-item">
-                            <h4>Technologies Used</h4>
-                            <p>Java Servlets • REST APIs • Git • GitHub • Backend Development</p>
-                        </div>
-                    </div>
-                </div>
-               
-            </section>
-        </section>
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">Python</div>
-                <div class="skill">Django</div>
-                <div class="skill">Flask</div>
-                <div class="skill">Java</div>
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">SQL</div>
-                <div class="skill">AWS</div>
-                <div class="skill">Git</div>
-                <div class="skill">GitHub</div>
-            </div>
-        </section>
-        <!-- Projects -->
-        <section class="parallax-wrapper2">
-            <section id="projects" class="section">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card ai-project ">
-                        <!-- Curtain Overlay -->
-                        <div class="curtain">
-                            <div class="curtain-left"></div>
-                            <div class="curtain-right"></div>
-                            <h2 class="coming-text">WORKING ON</h2>
-                        </div>
-                        <!-- Your existing content (unchanged) -->
-                        <div class="card-front">
-                            <div class="ai-content">
-                                <h3>TCS iON Internship Project (2nd Internship)</h3>
-                                <p class="status">Currently: Learning & Research Phase</p>
-                                <div class="ai-steps stage-learning">
-                                    <div class="progress-line"></div>
-                                    <div class="ai-step active">
-                                        <div class="circle"></div>
-                                        <p>Learning</p>
-                                    </div>
-                                    <div class="ai-step ">
-                                        <div class="circle"></div>
-                                        <p>Development</p>
-                                    </div>
-                                    <div class="ai-step ">
-                                        <div class="circle"></div>
-                                        <p>Deploy</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="card-inner">
-                            <!-- FRONT SIDE -->
-                            <div class="card-front">
-                                <h3>LockBytes</h3>
-                                <p>
-                                    Developed LockBytes, a Windows desktop application that allows users to securely encrypt files and decrypt them later only using their registered USB device. The application uses AES-256-GCM encryption, secure vault-based key storage, password-protected access, and Google Drive–based recovery using the user’s own Google account for secure and portable data protection.
-                                </p>
-                            </div>
-                            <!-- BACK (Slider) -->
-                            <div class="card-back">
-                                <div class="slider">
-                                    <img id="lockbytesSliderImage"
-                                         src="img/lockbytes_img/1st.png"
-                                         class="slide active">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Buttons (Always Visible) -->
-                        <div class="btn-container">
-                            <a href="https://github.com/CodageWithRahul/LockBytes/releases/tag/v1.0.0"
-                               target="_blank"
-                               class="btn">View Release</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="card-inner">
-                            <!-- FRONT SIDE -->
-                            <div class="card-front">
-                                <h3>DPDP Cloud Auditor</h3>
-                                <p>
-                                    A Django-based cloud security auditing platform supporting AWS, Azure, and GCP integration. It automates vulnerability detection, scans cloud resources for misconfigurations, and highlights compliance-related risks. The system generates downloadable reports and provides an interactive dashboard for analysis. <strong>This project was developed and submitted as my final year college major project.</strong>
-                                </p>
-                            </div>
-                            <!-- BACK (Slider) -->
-                            <div class="card-back">
-                                <div class="slider">
-                                    <img id="dpdpSliderImage"
-                                         src="img/dpdp_cloud_auditor/login.png"
-                                         class="slide active">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="demo-login">
-                            <h5>
-                                Demo Login
-                                <span class="demo-note">(may take a few seconds to load)</span>
-                            </h5>
-                            <p>
-                                <strong>User:</strong> rahulguptaa650@gmail.com
-                            </p>
-                            <p>
-                                <strong>Password:</strong> 12345
-                            </p>
-                        </div>
-                        <!-- Buttons (Always Visible) -->
-                        <div class="btn-container">
-                            <a href="https://dpdp-cloud-auditor.vercel.app/pages/login.html"
-                               target="_blank"
-                               class="btn">Live Demo</a>
-                            <a href="https://github.com/CodageWithRahul/dpdp-cloud-auditor"
-                               target="_blank"
-                               class="btn-outline">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="card-inner">
-                            <!-- FRONT SIDE -->
-                            <div class="card-front">
-                                <h3>Advance Task Management System</h3>
-                                <p>
-                                    An advanced task management system built with <strong>Python and Django</strong> designed to streamline productivity and task organization. The application includes features such as task prioritization, deadline tracking, status management, automated recurring tasks, and an intuitive user interface to enhance user experience and efficiency.
-                                </p>
-                            </div>
-                            <!-- BACK (Slider) -->
-                            <div class="card-back">
-                                <div class="slider">
-                                    <img id="sliderImage"
-                                         src="img/todo_img/login_page.png"
-                                         class="slide active">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="demo-login">
-                            <h5>
-                                Demo Login
-                                <span class="demo-note">(may take a few seconds to load)</span>
-                            </h5>
-                            <p>
-                                <strong>User:</strong> demouser@gmail.com
-                            </p>
-                            <p>
-                                <strong>Password:</strong> Demo1234
-                            </p>
-                        </div>
-                        <!-- Buttons (Always Visible) -->
-                        <div class="btn-container">
-                            <a href="https://advance-todo-app-1rt6.onrender.com/"
-                               target="_blank"
-                               class="btn">Live Demo</a>
-                            <a href="https://github.com/CodageWithRahul/Advance-Todo-app.git"
-                               target="_blank"
-                               class="btn-outline">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <h3>Student Management System</h3>
-                                <p>
-                                    A full-stack web application built using <strong>Flask, HTML, CSS, JavaScript, and SQLite with SQLAlchemy ORM</strong>, designed to efficiently manage student records, course enrollments, and academic data. The system supports complete CRUD operations, advanced search and filtering, and secure user authentication to ensure data integrity and usability.
-                                </p>
-                            </div>
-                            <!-- BACK SIDE (Image) -->
-                            <div class="card-back">
-                                <div class="slider">
-                                    <img src="img/sms_img/login page.png" class="slide active">
-                                    <img src="img/sms_img/dashboard.png" class="slide">
-                                    <img src="img/sms_img/students.png" class="slide">
-                                    <img src="img/sms_img/enrrolment.png" class="slide">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="demo-login">
-                            <h5>
-                                Demo Login
-                                <span class="demo-note">(may take a few seconds to load)</span>
-                            </h5>
-                            <p>
-                                <strong>User:</strong> demo
-                            </p>
-                            <p>
-                                <strong>Password:</strong> 1234
-                            </p>
-                        </div>
-                        <div class="btn-container">
-                            <a href="https://rahul-sms.onrender.com" target="_blank" class="btn">Live
-                            Demo</a>
-                            <a href="https://github.com/CodageWithRahul/Student-Management-system.git"
-                               target="_blank"
-                               class="btn-outline">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <h3>CAPTCHA Service</h3>
-                                <p>
-                                    Developed a secure web-based application during my TCS iON internship using <strong>Java Servlets</strong>. Designed and implemented a custom CAPTCHA service to prevent automated form submissions, gaining hands-on experience in backend development, HTTP request handling, and frontend–backend integration.
-                                </p>
-                            </div>
-                            <div class="card-back">
-                                <div class="slider">
-                                    <img src="img/captcha_img/captcha_img.png" class="slide active">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-container">
-                            <a href="https://github.com/CodageWithRahul/captcha-service-project.git"
-                               target="_blank"
-                               class="btn-outline">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <h3>Bill Maker</h3>
-                                <p>
-                                    Developed a desktop-based billing application using <strong>Java (OOP principles)</strong> with <strong>Swing</strong> for the user interface, tailored for Internet Service Providers to efficiently manage broadband and cable invoices. The system includes invoice generation, editable customer records, Excel export functionality, watermark integration, and optimized print layouts for professional billing operations.
-                                </p>
-                            </div>
-                            <div class="card-back">
-                                <div class="slider">
-                                    <img src="img/billmaker_img/bill dashboard.png" class="slide active">
-                                    <img src="img/billmaker_img/sample_bill.png" class="slide">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-container">
-                            <a href="https://github.com/CodageWithRahul/Bill-Maker/releases"
-                               target="_blank"
-                               class="btn-outline">GitHub</a>
+
+                    <div class="timeline-body">
+                        <ul>
+                            <li>
+                                <strong>FTTH Network Installation:</strong>
+                                Installed and maintained FTTH broadband services using
+                                GPON/EPON network technologies.
+                            </li>
+
+                            <li>
+                                <strong>Network Troubleshooting:</strong>
+                                Diagnosed LAN/WAN, routing, switching, and fiber connectivity
+                                issues to restore customer network services.
+                            </li>
+
+                            <li>
+                                <strong>Fault Resolution:</strong>
+                                Supported network maintenance and resolved connectivity
+                                problems in coordination with technical teams.
+                            </li>
+                        </ul>
+
+                        <div class="timeline-tags">
+                            <span class="tag-badge">FTTH / GPON / EPON</span>
+                            <span class="tag-badge">LAN / WAN</span>
+                            <span class="tag-badge">Routing &amp; Switching</span>
+                            <span class="tag-badge">Fiber Troubleshooting</span>
                         </div>
                     </div>
                 </div>
-            </section>
-        </section>
-        <!-- Contact -->
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <div class="contact-icons">
-                <!-- Email -->
-                <a href="mailto:rahulguptaa650@gmail.com" target="_blank" title="Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M502.3 190.8l-192-160c-15.5-12.9-38.5-12.9-54 0l-192 160c-12.3 10.3-15.3 28-7 41.3s26.1 20 41.3 12.7L256 143.5l209.7 101.3c15.2 7.3 33.7-0.3 41.3-12.7s5.3-30.9-7-41.3z" />
+
+                <!-- Experience Item: TCS iON -->
+                <div class="timeline-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-role">Software Development Intern</h3>
+                            <div class="timeline-company">TCS iON</div>
+                        </div>
+                        <span class="timeline-period">July 2025 &ndash; August 2025</span>
+                    </div>
+                    <div class="timeline-body">
+                        <ul>
+                            <li><strong>Engineered CAPTCHA Security Service:</strong> Architected and built a reusable
+                                server-side CAPTCHA authentication engine using Java Servlets to protect endpoints from
+                                automated bot spam.</li>
+                            <li><strong>Dynamic Challenge Generation:</strong> Implemented randomized character
+                                distortion, noise interference, and cryptographic session-token validation.</li>
+                            <li><strong>Seamless System Integration:</strong> Designed modular middleware for
+                                plug-and-play integration into login, registration, contact, and feedback endpoints.
+                            </li>
+                            <li><strong>Applied Engineering Skills:</strong> Java Servlets, REST APIs, Git &amp; GitHub,
+                                Web Application Security.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag-badge">Java Servlets</span>
+                            <span class="tag-badge">Web Security</span>
+                            <span class="tag-badge">REST APIs</span>
+                            <span class="tag-badge">Git &amp; GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Core Competencies</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skillset</span></h2>
+                <p class="section-subtitle">Languages, frameworks, cloud services, and tools I use to build scalable
+                    products.</p>
+            </div>
+
+            <div class="skills-categories">
+
+                <!-- Category 1: Backend Engineering -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Backend Engineering</h3>
+                    </div>
+                    <div class="skills-pills-wrap">
+                        <span class="skill-pill">Python (Advanced)</span>
+                        <span class="skill-pill">Django</span>
+                        <span class="skill-pill">Flask</span>
+                        <span class="skill-pill">Java (OOP)</span>
+                        <span class="skill-pill">RESTful APIs</span>
+                        <span class="skill-pill">Java Servlets</span>
+                        <span class="skill-pill">Session Authentication</span>
+                    </div>
+                </div>
+
+                <!-- Category 2: Cloud & Security -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Cloud &amp; Security</h3>
+                    </div>
+                    <div class="skills-pills-wrap">
+                        <span class="skill-pill">Amazon Web Services (AWS)</span>
+                        <span class="skill-pill">Multi-Cloud Security Auditing</span>
+                        <span class="skill-pill">AES-256-GCM Encryption</span>
+                        <span class="skill-pill">Hardware-Bound USB Keys</span>
+                        <span class="skill-pill">Vulnerability Assessment</span>
+                        <span class="skill-pill">Anti-Bot &amp; CAPTCHA Defense</span>
+                    </div>
+                </div>
+
+                <!-- Category 3: Databases & Architecture -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Databases &amp; ORM</h3>
+                    </div>
+                    <div class="skills-pills-wrap">
+                        <span class="skill-pill">SQL &amp; Query Optimization</span>
+                        <span class="skill-pill">SQLite</span>
+                        <span class="skill-pill">PostgreSQL</span>
+                        <span class="skill-pill">SQLAlchemy ORM</span>
+                        <span class="skill-pill">Django ORM</span>
+                        <span class="skill-pill">Data Modeling</span>
+                    </div>
+                </div>
+
+                <!-- Category 4: Tools, Web & Practices -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Frontend &amp; Tooling</h3>
+                    </div>
+                    <div class="skills-pills-wrap">
+                        <span class="skill-pill">JavaScript (ES6+)</span>
+                        <span class="skill-pill">HTML5 &amp; CSS3</span>
+                        <span class="skill-pill">Git &amp; GitHub</span>
+                        <span class="skill-pill">Vercel &amp; Render</span>
+                        <span class="skill-pill">Google Drive API</span>
+                        <span class="skill-pill">Java Swing GUI</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Portfolio Showcase</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Engineering Projects</span></h2>
+                <p class="section-subtitle">Interactive case studies with live demos, release downloads, and
+                    multi-screenshot galleries.</p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+                <button class="filter-btn" data-filter="cloud">Cloud &amp; Security</button>
+                <button class="filter-btn" data-filter="backend">Python / Backend</button>
+                <button class="filter-btn" data-filter="desktop">Desktop &amp; Java</button>
+            </div>
+
+            <!-- Active Ongoing Milestone Banner -->
+            <div class="active-dev-banner">
+                <div class="dev-banner-left">
+                    <span class="dev-banner-emoji">🚀</span>
+                    <div>
+                        <div class="dev-banner-label">In Active Development &bull; TCS iON 2nd Internship</div>
+                        <h4 class="dev-banner-title">Advanced Cloud Security &amp; AI Integration Architecture</h4>
+                    </div>
+                </div>
+                <div class="dev-banner-status">
+                    <span class="dev-banner-dot"></span>
+                    Research &amp; Prototyping Phase
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+
+                <!-- PROJECT 1: DPDP Cloud Auditor -->
+                <article class="project-card" data-category="cloud">
+                    <div class="project-thumbnail-wrapper">
+                        <img src="img/dpdp_cloud_auditor/dashboard.png" alt="DPDP Cloud Auditor Dashboard"
+                            class="project-img" loading="lazy" />
+                        <span class="project-badge-tag">Final Year Major Project</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="project-title">DPDP Cloud Auditor</h3>
+                        <p class="project-desc">
+                            A Django-based cloud security auditing platform with multi-cloud AWS, Azure, and GCP
+                            integration. Automates vulnerability detection, scans cloud resources for misconfigurations,
+                            and highlights compliance risks with downloadable reports.
+                        </p>
+
+                        <!-- Demo Login Box -->
+                        <div class="demo-creds-box">
+                            <div class="demo-creds-header">
+                                <span>⚡ Demo Credentials</span>
+                                <button class="copy-creds-btn btn-copy-card-creds" data-user="rahulguptaa650@gmail.com"
+                                    data-pass="12345" title="Copy Credentials">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span>Copy</span>
+                                </button>
+                            </div>
+                            <div class="demo-creds-content">
+                                <span>User: <strong>rahulguptaa650@gmail.com</strong></span>
+                                <span>Pass: <strong>12345</strong></span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag-badge">Django</span>
+                            <span class="tag-badge">AWS</span>
+                            <span class="tag-badge">Azure</span>
+                            <span class="tag-badge">GCP</span>
+                            <span class="tag-badge">Security Audit</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://dpdp-cloud-auditor.vercel.app/pages/login.html" target="_blank"
+                                rel="noopener noreferrer" class="btn-card-primary">
+                                <span>Live Demo</span>
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/CodageWithRahul/dpdp-cloud-auditor" target="_blank"
+                                rel="noopener noreferrer" class="btn-card-secondary" title="Source Code">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+
+                        <button class="btn-case-study" data-project-id="dpdp">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>View Case Study &amp; Gallery (14 Images)</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2: LockBytes -->
+                <article class="project-card" data-category="desktop">
+                    <div class="project-thumbnail-wrapper">
+                        <img src="img/lockbytes_img/1st.png" alt="LockBytes Desktop UI" class="project-img"
+                            loading="lazy" />
+                        <span class="project-badge-tag">Windows App &bull; AES-256</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="project-title">LockBytes Desktop</h3>
+                        <p class="project-desc">
+                            A Windows desktop application that securely encrypts files using AES-256-GCM authenticated
+                            cipher and decrypts them only using the user's registered physical USB device. Features
+                            Google Drive cloud backup recovery.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag-badge">Python</span>
+                            <span class="tag-badge">AES-256-GCM</span>
+                            <span class="tag-badge">USB Key Auth</span>
+                            <span class="tag-badge">Google Drive API</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/CodageWithRahul/LockBytes/releases/tag/v1.0.0" target="_blank"
+                                rel="noopener noreferrer" class="btn-card-primary">
+                                <span>View Release (v1.0.0)</span>
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/CodageWithRahul/LockBytes" target="_blank"
+                                rel="noopener noreferrer" class="btn-card-secondary" title="Source Code">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+
+                        <button class="btn-case-study" data-project-id="lockbytes">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>View Case Study &amp; Gallery (7 Images)</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3: Advance Task Management System -->
+                <article class="project-card" data-category="backend">
+                    <div class="project-thumbnail-wrapper">
+                        <img src="img/todo_img/dashboard.png" alt="Advance Task Management Dashboard"
+                            class="project-img" loading="lazy" />
+                        <span class="project-badge-tag">Django &bull; Full Stack</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="project-title">Advance Task Management</h3>
+                        <p class="project-desc">
+                            High-productivity task management system engineered with Python and Django. Incorporates
+                            task prioritization matrices, deadline tracking, automated recurring tasks, and detailed
+                            historical audit logs.
+                        </p>
+
+                        <!-- Demo Login Box -->
+                        <div class="demo-creds-box">
+                            <div class="demo-creds-header">
+                                <span>⚡ Demo Credentials</span>
+                                <button class="copy-creds-btn btn-copy-card-creds" data-user="demouser@gmail.com"
+                                    data-pass="Demo1234" title="Copy Credentials">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span>Copy</span>
+                                </button>
+                            </div>
+                            <div class="demo-creds-content">
+                                <span>User: <strong>demouser@gmail.com</strong></span>
+                                <span>Pass: <strong>Demo1234</strong></span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag-badge">Django</span>
+                            <span class="tag-badge">Python</span>
+                            <span class="tag-badge">Recurring Tasks</span>
+                            <span class="tag-badge">Render</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://advance-todo-app-1rt6.onrender.com/" target="_blank"
+                                rel="noopener noreferrer" class="btn-card-primary">
+                                <span>Live Demo</span>
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/CodageWithRahul/Advance-Todo-app.git" target="_blank"
+                                rel="noopener noreferrer" class="btn-card-secondary" title="Source Code">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+
+                        <button class="btn-case-study" data-project-id="todo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>View Case Study &amp; Gallery (10 Images)</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJECT 4: Student Management System -->
+                <article class="project-card" data-category="backend">
+                    <div class="project-thumbnail-wrapper">
+                        <img src="img/sms_img/dashboard.png" alt="Student Management System Dashboard"
+                            class="project-img" loading="lazy" />
+                        <span class="project-badge-tag">Flask &bull; SQLAlchemy</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="project-title">Student Management System</h3>
+                        <p class="project-desc">
+                            A full-stack web application built with Flask, SQLAlchemy ORM, and SQLite to manage academic
+                            records, student profiles, and course enrollments with dynamic filtering and authentication.
+                        </p>
+
+                        <!-- Demo Login Box -->
+                        <div class="demo-creds-box">
+                            <div class="demo-creds-header">
+                                <span>⚡ Demo Credentials</span>
+                                <button class="copy-creds-btn btn-copy-card-creds" data-user="demo" data-pass="1234"
+                                    title="Copy Credentials">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span>Copy</span>
+                                </button>
+                            </div>
+                            <div class="demo-creds-content">
+                                <span>User: <strong>demo</strong></span>
+                                <span>Pass: <strong>1234</strong></span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag-badge">Flask</span>
+                            <span class="tag-badge">SQLAlchemy</span>
+                            <span class="tag-badge">SQLite</span>
+                            <span class="tag-badge">CRUD APIs</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://rahul-sms.onrender.com" target="_blank" rel="noopener noreferrer"
+                                class="btn-card-primary">
+                                <span>Live Demo</span>
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/CodageWithRahul/Student-Management-system.git" target="_blank"
+                                rel="noopener noreferrer" class="btn-card-secondary" title="Source Code">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+
+                        <button class="btn-case-study" data-project-id="sms">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>View Case Study &amp; Gallery (6 Images)</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJECT 5: Dynamic CAPTCHA Service -->
+                <article class="project-card" data-category="security">
+                    <div class="project-thumbnail-wrapper">
+                        <img src="img/captcha_img/captcha_img.png" alt="CAPTCHA Service Project" class="project-img"
+                            loading="lazy" />
+                        <span class="project-badge-tag">TCS iON &bull; Web Security</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="project-title">Dynamic CAPTCHA Service</h3>
+                        <p class="project-desc">
+                            Developed a secure web-based application during my TCS iON internship using Java Servlets.
+                            Designed and implemented dynamic distorted text generation with server-side validation to
+                            prevent automated bot submissions.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag-badge">Java Servlets</span>
+                            <span class="tag-badge">Anti-Bot</span>
+                            <span class="tag-badge">Security Middleware</span>
+                            <span class="tag-badge">REST</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/CodageWithRahul/captcha-service-project.git" target="_blank"
+                                rel="noopener noreferrer" class="btn-card-primary" style="flex: 1;">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+
+                        <button class="btn-case-study" data-project-id="captcha">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>View Details &amp; Architecture</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJECT 6: Bill Maker -->
+                <article class="project-card" data-category="desktop">
+                    <div class="project-thumbnail-wrapper">
+                        <img src="img/billmaker_img/bill dashboard.png" alt="Bill Maker Dashboard" class="project-img"
+                            loading="lazy" />
+                        <span class="project-badge-tag">Java Swing &bull; Desktop</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="project-title">Bill Maker ISP Invoicing Suite</h3>
+                        <p class="project-desc">
+                            A desktop billing application developed in Java Swing using Object-Oriented principles,
+                            tailored for Internet Service Providers to handle monthly billing cycles, customer accounts,
+                            and invoice generation with watermarking.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag-badge">Java Swing</span>
+                            <span class="tag-badge">OOP</span>
+                            <span class="tag-badge">Excel Export</span>
+                            <span class="tag-badge">PDF Printing</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/CodageWithRahul/Bill-Maker/releases" target="_blank"
+                                rel="noopener noreferrer" class="btn-card-primary">
+                                <span>Releases</span>
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/CodageWithRahul/Bill-Maker" target="_blank"
+                                rel="noopener noreferrer" class="btn-card-secondary" title="Source Code">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+
+                        <button class="btn-case-study" data-project-id="billmaker">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>View Case Study &amp; Gallery</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something <span class="gradient-text">Exceptional</span></h2>
+                <p class="section-subtitle">Whether you have a role opening, project inquiry, or just want to connect,
+                    feel free to reach out.</p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- Left: Contact Methods -->
+                <div class="contact-cards-col">
+
+                    <!-- Email Card -->
+                    <div class="contact-card-item">
+                        <div class="contact-icon-box">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l9.518 7.713 9.518-7.713v11.817h-19.036z" />
+                            </svg>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Email Address</h4>
+                            <p>rahulguptaa650@gmail.com</p>
+                        </div>
+                        <button class="copy-email-btn btn-copy-email" title="Copy Email">
+                            <span>Copy</span>
+                        </button>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <a href="https://www.linkedin.com/in/rahul-gupta-24and27" target="_blank" rel="noopener noreferrer"
+                        class="contact-card-item">
+                        <div class="contact-icon-box">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>LinkedIn Profile</h4>
+                            <p>linkedin.com/in/rahul-gupta-24and27</p>
+                        </div>
+                        <span style="color: var(--accent-cyan); font-size: 1.2rem; margin-left: auto;">↗</span>
+                    </a>
+
+                    <!-- GitHub Card -->
+                    <a href="https://github.com/CodageWithRahul" target="_blank" rel="noopener noreferrer"
+                        class="contact-card-item">
+                        <div class="contact-icon-box">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>GitHub Repositories</h4>
+                            <p>github.com/CodageWithRahul</p>
+                        </div>
+                        <span style="color: var(--accent-cyan); font-size: 1.2rem; margin-left: auto;">↗</span>
+                    </a>
+
+                    <!-- Download Resume Banner -->
+                    <div class="contact-card-item"
+                        style="background: linear-gradient(135deg, rgba(0, 240, 255, 0.08) 0%, rgba(139, 92, 246, 0.12) 100%); border-color: rgba(0, 240, 255, 0.3);">
+                        <div class="contact-icon-box" style="background: var(--accent-cyan); color: #070a12;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Need My Full Resume?</h4>
+                            <p>Updated PDF format with complete academic and project logs.</p>
+                        </div>
+                        <a href="cv/Rahul_Gupta_CV.pdf" target="_blank" download class="btn-primary"
+                            style="padding: 8px 16px; font-size: 0.85rem; margin-left: auto;">
+                            <span>Download</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Right: Message Form -->
+                <div class="contact-form-card">
+                    <h3>Send a Direct Message</h3>
+                    <p>Leave a note here and it will open directly in your mail client addressed to me.</p>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Your Name</label>
+                            <input type="text" id="contactName" class="form-control" placeholder="e.g. Alex Morgan"
+                                required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Your Email</label>
+                            <input type="email" id="contactEmail" class="form-control" placeholder="alex@company.com"
+                                required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Message / Inquiry</label>
+                            <textarea id="contactMessage" class="form-control"
+                                placeholder="Hi Rahul, I saw your portfolio and would like to discuss..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                            <span>Send Message</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Detail Case Study Modal -->
+    <div class="modal-backdrop" id="projectModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="project-modal">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Screenshot Carousel -->
+            <div class="modal-carousel">
+                <img id="carouselImage" src="" alt="Project Screenshot" class="carousel-img" />
+                <button class="carousel-control prev" id="carouselPrevBtn" aria-label="Previous screenshot">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-control next" id="carouselNextBtn" aria-label="Next screenshot">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+                <div class="carousel-counter" id="carouselCounter">1 / 1</div>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+
+            <!-- Modal Content Header -->
+            <div class="modal-header-info">
+                <span class="tag-badge" id="modalCategoryBadge"
+                    style="width: fit-content; background: rgba(0, 240, 255, 0.1); color: var(--accent-cyan);">Category</span>
+                <h2 class="modal-project-title" id="modalTitle">Project Title</h2>
+                <h4 class="modal-project-subtitle" id="modalSubtitle">Project Subtitle</h4>
+            </div>
+
+            <!-- Description -->
+            <h3 class="modal-section-title">Overview &amp; Architecture</h3>
+            <p class="modal-text" id="modalLongDesc"></p>
+
+            <!-- Highlights -->
+            <h3 class="modal-section-title">Key Capabilities</h3>
+            <ul class="modal-highlights-list" id="modalHighlights"></ul>
+
+            <!-- Demo Credentials (if available) -->
+            <div id="modalCredentialsBox" class="demo-creds-box" style="margin-top: 1.5rem; display: none;">
+                <div class="demo-creds-header">
+                    <span>⚡ Live Demo Test Credentials</span>
+                    <button class="copy-creds-btn" id="modalCopyCredsBtn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        <span>Copy Credentials</span>
+                    </button>
+                </div>
+                <div class="demo-creds-content" style="margin-top: 6px;">
+                    <span>User: <strong id="modalUserVal"></strong></span>
+                    <span>Password: <strong id="modalPassVal"></strong></span>
+                </div>
+                <p id="modalCredsNote" style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;"></p>
+            </div>
+
+            <!-- Tech Stack Tags -->
+            <h3 class="modal-section-title">Technologies &amp; Tools</h3>
+            <div class="project-tags" id="modalTags" style="margin-top: 0.5rem;"></div>
+
+            <!-- Actions Bar -->
+            <div class="modal-actions-bar">
+                <a id="modalDemoLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    <span>Launch Live Demo</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
                     </svg>
                 </a>
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/rahul-gupta-24and27"
-                   target="_blank"
-                   title="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.1 108.1 0 83.9 0 54.2S24.1 0 53.79 0 107.6 24.1 107.6 54.2 83.5 108.1 53.79 108.1zM447.9 448h-92.68V302.4c0-34.7-12.5-58.4-43.8-58.4-23.9 0-38.1 16-44.4 31.5-2.3 5.5-2.8 13.1-2.8 20.7V448h-92.7s1.2-241 0-266.9h92.7v37.9c12.3-19 34.4-46 83.8-46 61.2 0 107.2 40 107.2 125.8V448z" />
+                <a id="modalGithubLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
                     </svg>
-                </a>
-                <!-- GitHub -->
-                <a href="https://github.com/CodageWithRahul"
-                   target="_blank"
-                   title="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.1 0-5.4-1.6-5.4-3.6 0-2 2.3-3.6 5.2-3.6 2.9 0 5.4 1.6 5.4 3.6zm-33.6-10.3c-.7 1.6 1.6 3.3 5 3.7 3.6.4 7-0.7 7.7-2.3.7-1.6-1.6-3.3-5-3.7-3.6-.3-7 .7-7.7 2.3zm44.8-1.7c-2.9.7-4.7 2.9-4 4.9.7 2 3.6 2.7 6.5 2 2.9-.7 4.7-2.9 4-4.9-.8-1.9-3.6-2.7-6.5-2zM244.8 8C108.3 8 0 116.3 0 252.8c0 107.5 69.8 198.7 166.8 231.4 12.2 2.3 16.6-5.3 16.6-11.7 0-5.8-.2-21.2-.3-41.5-67.8 14.7-82.1-32.7-82.1-32.7-11.1-28.1-27.1-35.6-27.1-35.6-22.1-15.1 1.7-14.8 1.7-14.8 24.4 1.7 37.3 25.1 37.3 25.1 21.7 37.2 56.9 26.5 70.8 20.3 2.2-15.8 8.5-26.5 15.5-32.6-54.1-6.2-110.9-27-110.9-120.3 0-26.6 9.5-48.3 25.1-65.3-2.5-6.1-10.9-30.7 2.4-64 0 0 20.5-6.6 67.1 24.9 19.5-5.4 40.5-8.1 61.3-8.2 20.8.1 41.8 2.8 61.3 8.2 46.5-31.5 67-24.9 67-24.9 13.3 33.3 4.9 57.9 2.4 64 15.7 17 25.1 38.7 25.1 65.3 0 93.5-56.9 114-111 120 8.7 7.5 16.5 22.4 16.5 45.1 0 32.6-.3 58.9-.3 66.9 0 6.5 4.3 14.2 16.7 11.7C426.2 451.5 496 360.3 496 252.8 496 116.3 387.7 8 251.2 8z" />
-                    </svg>
+                    <span>View Source on GitHub</span>
                 </a>
             </div>
-            <div class="cv-section">
-                <a href="cv/Rahul_Gupta_CV.pdf" download class="cv-btn">Download CV</a>
+        </div>
+    </div>
+
+    <!-- Global Toast Notification -->
+    <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <span class="toast-text">Action succeeded</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                Rahul<span>.dev</span> &bull; Engineered with Precision
             </div>
-        </section>
-        <!-- Footer -->
-        <footer>
-            <p>© 2025 Rahul Gupta | Built with 💻 and ☕</p>
-        </footer>
-    </body>
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-copy">
+                &copy; 2026 Rahul Gupta. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
